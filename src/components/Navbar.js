@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../logo.svg';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import Logo from "../logo.svg";
 
 function Navbar() {
   return (
@@ -11,8 +11,12 @@ function Navbar() {
         </Link>
       </div>
       <ul className="menu">
-        <li><Link to="/subjects">Předměty</Link></li>
-        <li><Link to="/about">O nás</Link></li>
+        <li>
+          <Link to="/subjects">Předměty</Link>
+        </li>
+        <li>
+          <Link to="/about">O nás</Link>
+        </li>
         <li>
           <a href="">Support</a>
         </li>
