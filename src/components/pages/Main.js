@@ -18,7 +18,6 @@ function Main() {
           <button className="scroll-down-btn">Scroll down</button>
         </div>
       </div>
-      <main>{/* <h2>Populární články</h2> */}</main>
     </React.Fragment>
   );
 }
