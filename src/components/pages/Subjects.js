@@ -1,19 +1,20 @@
 import React from "react";
 import Subject from "../Subject";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 export default function Subjects() {
   return (
     <main>
-      <Subject name="Fyzika" />
-      <Subject name="Matematika" />
-      <Subject name="Dějepis" />
-      <Subject name="Zeměpis" />
-      <Subject name="Fyzika" />
-      <Subject name="Fyzika" />
-      <Subject name="Fyzika" />
-      <Subject name="Fyzika" />
-      <Subject name="Fyzika" />
+      <div className="subjects">
+        <Subject name="Fyzika" hasContent={false} />
+        <Subject name="Matematika" hasContent={false} />
+        <Subject name="Dějepis" hasContent={false} />
+        <Subject name="Zeměpis" hasContent={false} />
+        <Subject name="Fyzika" hasContent={false} />
+        <Subject name="Fyzika" hasContent={false} />
+        <Subject name="Fyzika" hasContent={false} />
+        <Subject name="Fyzika" hasContent={false} />
+        <Subject name="Fyzika" hasContent={false} />
+      </div>
     </main>
   );
 }

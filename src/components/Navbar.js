@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../logo.svg";
 
@@ -18,10 +18,10 @@ function Navbar() {
           <Link to="/about">O nás</Link>
         </li>
         <li>
-          <a href="">Support</a>
+          <Link to="/support">Support</Link>
         </li>
         <li>
-          <a href="">Účet</a>
+          <a href="#f">Účet</a>
         </li>
       </ul>
     </nav>

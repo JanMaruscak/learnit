@@ -13,11 +13,13 @@ function Main() {
             <li>Interaktivní výuka</li>
             <li>Najdeš zde vše co tě napadne</li>
           </ul>
-          <img src="../../public/logo192.png" alt="logo" />
           <h2>Tak čím začneš?</h2>
           <button className="scroll-down-btn">Scroll down</button>
         </div>
       </div>
+      <main>
+        <h3>Nejčtenější články</h3>
+      </main>
     </React.Fragment>
   );
 }
