@@ -26,7 +26,7 @@ nav {
 nav > .menu a {
   color: white;
   background-color: #4169e1; /*#007bff;/*#20639B;*/
-  padding: 0 15px;
+  padding: 0 1vw;
   line-height: 3.5vw;
   display: block;
 }
@@ -77,7 +77,7 @@ nav > .logo {
 .subjects {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
   display: table;
   text-align: center;
 }
@@ -92,7 +92,7 @@ nav > .logo {
   font-size: 2vw;
   width: 14vw;
   border: 0;
-  border-radius: 10px;
+  border-radius: 0.75vw;
 
   background: rgba(144, 238, 144, 1);
   background: -moz-linear-gradient(
@@ -150,9 +150,9 @@ nav > .logo {
   font-size: 2.25vw;
   border: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  animation: pulse 4s infinite;
+  animation: pulse 2s infinite;
 
-  -webkit-animation: pulse 4s infinite;
+  -webkit-animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -177,13 +177,22 @@ nav > .logo {
 }
 @-webkit-keyframes pulse {
   0% {
-    color: red;
+    transform: translateY(0px);
   }
   50% {
-    color: blue;
+    transform: translateY(25px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+  70% {
+    transform: translateY(4px);
+  }
+  80% {
+    transform: translateY(-1px);
   }
   100% {
-    color: red;
+    transform: translateY(0px);
   }
 }
 
@@ -205,7 +214,7 @@ main {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
 
   /* min-height: 88vh; */
 }
@@ -224,6 +233,7 @@ footer {
   font-size: 1vw;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1vw;
   background-color: #4169e1;
   color: white;
   height: 3vw;
@@ -245,42 +255,71 @@ footer > img {
 }
 .support-searchBox {
   margin: 20px;
-  width: 40vw;
+  width: 55vw;
   height: 3vw;
   font-size: 2vw;
 }
+.article{
+  width: 20vw;
+  background-color: #708090;
+}
+.article > img{
+  width: 60%;
+}
 /* RESPONSIVITY */
-@media only screen and (max-width: 768px) {
-  main {
+@media only screen and (max-width: 1024px) {
+  nav {
+    height: 10vw;
+    font-size: 3vw;
   }
-  .header > h1{
+  nav > .menu a {
+    padding: 0 2vw;
+    line-height: 10vw;
+  }
+  nav > .menu > li:first-of-type {
+    margin-left: 75px;
+  }
+  nav > .logo {
+    width: 10vw;
+  }
+  main {
+    width: 100%;
+  }
+  main > h1 {
     font-size: 8vw;
   }
-  .header > h2{
+  .header > h1 {
+    font-size: 8vw;
+  }
+  .header > h2 {
     font-size: 6vw;
   }
-  .subject-button {
-    font-size: 16px;
-    margin: 10px;
-    padding: 0;
-    width: 120px;
+  .subjects {
+    width: 100%;
   }
-  .scroll-down-btn{
+  .subject-button {
+    font-size: 6vw;
+    margin: 2vw;
+    padding: 4.5vw;
+    width: 30vw;
+
+  }
+  .scroll-down-btn {
     font-size: 4vw;
   }
-  .main-bullet-points > li{
+  .main-bullet-points > li {
     text-align: center;
     list-style-type: none;
     margin: 2vw auto;
     font-size: 5vw;
-    width: 80%;
+    width: 90%;
   }
   .support-searchBox {
     width: 90%;
     margin-left: 0;
     margin-right: 0;
   }
-  footer{
+  footer {
     font-size: 3vw;
     height: 9vw;
     line-height: 9vw;
@@ -288,18 +327,13 @@ footer > img {
   footer > p {
     padding-left: 3vw;
   }
-  
+
   footer > img {
     width: 5vw;
     padding-left: 3vw;
   }
 }
 @media only screen and (max-width: 1000px) {
-  .subject-button {
-    font-size: 28px;
-    margin: 10px;
-    padding: 10px;
-  }
   .main-bullet-points {
     text-align: center;
   }

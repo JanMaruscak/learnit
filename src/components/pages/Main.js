@@ -1,5 +1,5 @@
 import React from "react";
-import "../../App.css";
+import Article from '../Article'
 
 function Main() {
   return (
@@ -19,6 +19,9 @@ function Main() {
       </div>
       <main>
         <h3>Nejčtenější články</h3>
+        <div className="articles">
+          <Article imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/" imgAlt="kocicka" name="kocicka"/>
+        </div>
       </main>
     </React.Fragment>
   );

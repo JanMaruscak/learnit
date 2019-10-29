@@ -1,13 +1,11 @@
 import React from "react";
 
-function Article(props) {
+export default function Article(props) {
   return (
       <div className="article">
           <h2>{props.name}</h2>
-          <img src={props.img-url} alt={props.img-alt}/>
-          <p>{props.about}</p>
+          <img src={props.imgUrl} alt={props.imgAlt}/>
+          <p>{props.text}</p>
       </div>      
   );
 }
-
-export default Article;
