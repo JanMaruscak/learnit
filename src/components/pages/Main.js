@@ -1,5 +1,5 @@
 import React from "react";
-import Article from '../Article'
+import ArticleLink from '../ArticleLink'
 
 function Main() {
   return (
@@ -20,7 +20,7 @@ function Main() {
       <main>
         <h3>Nejčtenější články</h3>
         <div className="articles">
-          <Article imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/" imgAlt="kocicka" name="kocicka"/>
+          <ArticleLink imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/" imgAlt="kocicka" name="kocicka"/>
         </div>
       </main>
     </React.Fragment>

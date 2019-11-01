@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Article(props) {
+export default function ArticleLink(props) {
   return (
       <div className="article">
           <h2>{props.name}</h2>

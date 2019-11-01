@@ -1,10 +1,22 @@
 import React from "react";
 
-export default function SubjectPage({match}) {
-  return (
-    <main>
-        <h1>{match.params.name}</h1>
-        <h2>{match.params.hasContent}</h2>
-    </main>
-  );
+// var page;
+// export default function SubjectPage({match}) {
+//   function TryGetPage() {
+//     if(true){
+//       page = require('./SubjectPages/Fyzika').default
+//       return page;
+//     }
+//   }
+//   const ComponentToRender = page;
+//   TryGetPage()
+//   return <ComponentToRender/>
+// }
+class SubjectPage extends React.Component {
+  render () {
+      const ComponentToRender = require('./SubjectPages/Fyzika').default;
+      return <ComponentToRender/>
+  }
 }
+
+export default SubjectPage
