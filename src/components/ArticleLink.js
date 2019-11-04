@@ -2,10 +2,16 @@ import React from "react";
 
 export default function ArticleLink(props) {
   return (
-      <div className="article">
-          <h2>{props.name}</h2>
-          <img src={props.imgUrl} alt={props.imgAlt}/>
+    <div className="article">
+      <h2>{props.name}</h2>
+      <div className="container">
+        <div className="leftBox">
+          <img src={props.imgUrl} alt={props.imgAlt} />
+        </div>
+        <div className="rightBox">
           <p>{props.text}</p>
-      </div>      
+        </div>
+      </div>
+    </div>
   );
 }

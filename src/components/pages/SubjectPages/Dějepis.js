@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Fyzika() {
+export default function Dějepis() {
     return (
         <main>
-            <h1>Fyzika</h1>
+            <h1>Dějepis</h1>            
         </main>
     )
 }

@@ -44,25 +44,23 @@ nav > .menu > li:first-of-type {
 }
 
 .main {
-  background-image: url("images/main-photo.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("images/main-photo.jpg");
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  /* min-height: 88vh; */
-}
-
-.header {
+  
   color: #90ee90;
   text-shadow: 3px 5px 2px #474747; /*text-shadow: 0 2px 4px rgba(41,48,59,.55);*/
   text-align: center;
   /*text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);*/
+
+  /* min-height: 88vh; */
 }
-.header > h1 {
+
+.main > h1 {
   padding-top: 2.5vw;
   font-size: 4.5vw;
 }
-.header > h2 {
+.main > h2 {
   margin-top: 7vw;
   font-size: 3.5vw;
 }
@@ -253,18 +251,38 @@ footer > img {
   margin-left: auto;
   margin-right: auto;
 }
-.support-searchBox {
+.search-container > .support-searchBox {
   margin: 20px;
   width: 55vw;
   height: 3vw;
   font-size: 2vw;
 }
+.search-container > i{
+
+}
 .article{
   width: 20vw;
   background-color: #708090;
 }
-.article > img{
-  width: 60%;
+.article > h2{
+  padding: 0.25vw;
+}
+.article > .container{
+  width: 20vw;
+  background-color: #708090;
+  display: flex;
+}
+.article > .container > .rightBox{
+  width: 50%;
+  text-align: left;
+  padding-left: 0.5vw;
+}
+.article > .container > .leftBox{
+  text-align: left;
+  width: 50%;
+}
+.article > .container > .leftBox > img{
+  width: 100%;
 }
 /* RESPONSIVITY */
 @media only screen and (max-width: 1024px) {
@@ -288,10 +306,10 @@ footer > img {
   main > h1 {
     font-size: 8vw;
   }
-  .header > h1 {
+  .main > h1 {
     font-size: 8vw;
   }
-  .header > h2 {
+  .main > h2 {
     font-size: 6vw;
   }
   .subjects {
