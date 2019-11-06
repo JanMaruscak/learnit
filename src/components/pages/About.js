@@ -12,6 +12,8 @@ export class About extends Component {
           veritatis fugiat fuga ea adipisci? Nihil dignissimos non corporis
           provident in esse exercitationem.
         </p>
+        <h2>Lorem nic</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero molestias accusamus, culpa, illum minus ipsa aperiam, beatae explicabo veritatis labore et atque natus ea nisi pariatur eos debitis molestiae?</p>
       </main>
     );
   }
