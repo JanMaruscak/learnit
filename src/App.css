@@ -88,8 +88,10 @@ nav > .logo {
   margin: 0.5vw;
   font-size: 2vw;
   width: 14vw;
+  height: 5vw;
   border: 0;
   border-radius: 0.75vw;
+  line-height: 50%;
 
   background-color: royalblue;
   /* background: rgba(144, 238, 144, 1);
@@ -158,16 +160,19 @@ nav > .logo {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(25px);
+    transform: translateY(2vw);
   }
   60% {
-    transform: translateY(-4px);
+    transform: translateY(-0.3vw);
   }
   70% {
-    transform: translateY(4px);
+    transform: translateY(0.3vw);
   }
   80% {
-    transform: translateY(-1px);
+    transform: translateY(-0.1vw);
+  }
+  90% {
+    transform: translateY(0.1vw);
   }
   100% {
     transform: translateY(0px);
@@ -178,16 +183,19 @@ nav > .logo {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(25px);
+    transform: translateY(2vw);
   }
   60% {
-    transform: translateY(-4px);
+    transform: translateY(-0.3vw);
   }
   70% {
-    transform: translateY(4px);
+    transform: translateY(0.3vw);
   }
   80% {
-    transform: translateY(-1px);
+    transform: translateY(-0.1vw);
+  }
+  90% {
+    transform: translateY(0.1vw);
   }
   100% {
     transform: translateY(0px);
@@ -216,7 +224,8 @@ main {
   /* min-height: 88vh; */
 }
 main > h1 {
-  padding-top: 20px;
+  padding-top: 0.75vw;
+  padding-bottom: 0.75vw;
   font-size: 3vw;
 }
 main > h2 {
@@ -254,16 +263,23 @@ footer > img {
   font-size: 2vw;
 }
 .articles {
-  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
 }
 .article {
-  display: table-cell;
   width: 20vw;
+  height: 10vw;
   background-color: #708090;
-  margin: 0.5vw;
+  margin: 0.5vw;  
+  overflow: hidden;
+  display: inline-block;
 }
 .article > h2 {
   padding: 0.25vw;
+  font-size: 1.5vw;
 }
 .article > .container {
   width: 20vw;
@@ -329,7 +345,8 @@ footer > img {
     font-size: 6vw;
     margin: 2vw;
     padding: 4.5vw;
-    width: 30vw;
+    width: 40vw;
+    height: 15vw;
   }
   .scroll-down-btn {
     font-size: 4vw;

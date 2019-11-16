@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ArticleLink(props) {
   return (
-    <div className="article">
+    <article className="article">
       <h2>{props.name}</h2>
       <div className="container">
         <div className="leftBox">
@@ -12,6 +12,6 @@ export default function ArticleLink(props) {
           <p>{props.text}</p>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

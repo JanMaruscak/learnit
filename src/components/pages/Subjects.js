@@ -4,6 +4,7 @@ import Subject from "../Subject";
 export default function Subjects() {
   return (
     <main>
+      <h1>Předměty</h1>
       <div className="subjects">
         <Subject name="Fyzika" hasContent={false} />
         <Subject name="Matematika" hasContent={false} />

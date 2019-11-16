@@ -21,25 +21,49 @@ function Main() {
           <ArticleLink
             imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
             imgAlt="kocicka"
-            name="kocicka"
+            name="Kocicka"
+            text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin in tellus sit amet nibh dignissim sagittis. Nunc auctor. Pellentesque sapien. Duis viverra diam non justo. Nunc tincidunt ante vitae massa. Aliquam erat volutpat. Fusce suscipit libero eget elit. Nunc dapibus tortor vel mi dapibus sollicitudin. Fusce nibh. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Aenean placerat."
+          />
+          <ArticleLink
+            imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+            imgAlt="kocicka"
+            name="Kocicka"
             text="Kocicka je psem a stavbou zustane"
           />
           <ArticleLink
             imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
             imgAlt="kocicka"
-            name="kocicka"
+            name="Kocicka"
             text="Kocicka je psem a stavbou zustane"
           />
           <ArticleLink
             imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
             imgAlt="kocicka"
-            name="kocicka"
+            name="Kocicka"
             text="Kocicka je psem a stavbou zustane"
           />
           <ArticleLink
             imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
             imgAlt="kocicka"
-            name="kocicka"
+            name="Kocicka"
+            text="Kocicka je psem a stavbou zustane"
+          />
+          <ArticleLink
+            imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+            imgAlt="kocicka"
+            name="Kocicka"
+            text="Kocicka je psem a stavbou zustane"
+          />
+          <ArticleLink
+            imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+            imgAlt="kocicka"
+            name="Kocicka"
+            text="Kocicka je psem a stavbou zustane"
+          />
+          <ArticleLink
+            imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+            imgAlt="kocicka"
+            name="Kocicka"
             text="Kocicka je psem a stavbou zustane"
           />
         </div>
