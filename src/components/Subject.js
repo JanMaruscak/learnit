@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 export default function Subject(props) {
   const site = `/subjects/${props.name}`//.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   return (
-    <Link to={site}>
-      <button className="subject-button">{props.name}</button>
+    <Link to={site} className="subject-button">{props.name}
     </Link>
   );
 }

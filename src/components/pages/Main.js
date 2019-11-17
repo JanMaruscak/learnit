@@ -16,7 +16,7 @@ function Main() {
         <button className="scroll-down-btn">Scroll down</button>
       </div>
       <main>
-        <h2>Nejčtenější články</h2>
+        <h1>Nejčtenější články</h1>
         <div className="articles">
           <ArticleLink
             imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"

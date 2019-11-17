@@ -81,17 +81,19 @@ nav > .logo {
   text-align: center;
 }
 .subject-button {
+  display: inline-block;
   cursor: pointer;
   outline: none;
   text-decoration: none;
   padding: 1.5vw;
   margin: 0.5vw;
-  font-size: 2vw;
-  width: 14vw;
+  font-size: 2.5vw;
+  width: 16vw;
   height: 5vw;
   border: 0;
   border-radius: 0.75vw;
-  line-height: 50%;
+  line-height: 5vw;
+  color: #000;
 
   background-color: royalblue;
   /* background: rgba(144, 238, 144, 1);
@@ -135,9 +137,6 @@ nav > .logo {
   -webkit-box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.75);
-}
-.subject-button > a {
-  color: rgb(0, 0, 0);
 }
 .scroll-down-btn {
   color: white;
@@ -270,8 +269,8 @@ footer > img {
   /* justify-content: space-around; */
 }
 .article {
-  width: 20vw;
-  height: 10vw;
+  width: 20.25vw;
+  height: auto;
   background-color: #708090;
   margin: 0.5vw;  
   overflow: hidden;
@@ -282,14 +281,15 @@ footer > img {
   font-size: 1.5vw;
 }
 .article > .container {
-  width: 20vw;
   background-color: #708090;
   display: flex;
 }
 .article > .container > .rightBox {
   width: 50%;
   text-align: left;
+  font-size: 1vw;
   padding-left: 0.5vw;
+  padding-right: 0.5vw;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -335,6 +335,31 @@ footer > img {
   main > p {
     width: 90%;
   }
+  .article{
+    width: 40vw;
+    height: auto;
+  }
+  .article > h2 {
+    padding: 0.25vw;
+    font-size: 3vw;
+  }
+  .article > .container {
+    background-color: #708090;
+    display: flex;
+  }
+  .article > .container > .rightBox {
+    width: 50%;
+    text-align: left;
+    font-size: 2vw;
+    padding-left: 0.5vw;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .article > .container > .leftBox {
+    text-align: left;
+    width: 50%;
+  }
   .main > h1 {
     font-size: 8vw;
   }
@@ -348,8 +373,9 @@ footer > img {
     font-size: 6vw;
     margin: 2vw;
     padding: 4.5vw;
-    width: 40vw;
+    width: 35vw;
     height: 15vw;
+    line-height: 15vw;
   }
   .scroll-down-btn {
     font-size: 4vw;
