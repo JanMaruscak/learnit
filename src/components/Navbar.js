@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Logo from "../logo.svg";
 
 function Navbar() {
+  const [responsive, setResponsive] = useState(false);
   return (
     <nav>
       <div className="logo">

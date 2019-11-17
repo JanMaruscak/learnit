@@ -76,7 +76,7 @@ nav > .logo {
 .subjects {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
   display: table;
   text-align: center;
 }
@@ -336,11 +336,12 @@ footer > img {
     width: 90%;
   }
   .article{
-    width: 40vw;
+    width: 45vw;
     height: auto;
+    margin: 1vw;
   }
   .article > h2 {
-    padding: 0.25vw;
+    padding: 1vw;
     font-size: 3vw;
   }
   .article > .container {
@@ -374,8 +375,8 @@ footer > img {
     margin: 2vw;
     padding: 4.5vw;
     width: 35vw;
-    height: 15vw;
-    line-height: 15vw;
+    height: 10vw;
+    line-height: 10vw;
   }
   .scroll-down-btn {
     font-size: 4vw;
