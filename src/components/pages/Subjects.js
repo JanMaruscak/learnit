@@ -10,6 +10,7 @@ export default function Subjects() {
         <Subject name="Matematika" hasContent={false} />
         <Subject name="Dějepis" hasContent={false} />
         <Subject name="Zeměpis" hasContent={false} />
+        <Subject name="Snippets" hasContent={true}/>
         <Subject name="Fyzika" hasContent={false} />
         <Subject name="Fyzika" hasContent={false} />
         <Subject name="Fyzika" hasContent={false} />
