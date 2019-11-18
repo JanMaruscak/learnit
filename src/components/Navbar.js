@@ -1,9 +1,17 @@
-import React, {useState} from "react";
+import React, {useState,useEffect} from "react";
 import { Link } from "react-router-dom";
 import Logo from "../logo.svg";
 
 function Navbar() {
-  const [responsive, setResponsive] = useState(false);
+  const [mobile, setMobile] = useState(false);
+  let showMenu;
+  
+  if(mobile){
+    showMenu = "menu mobile";
+  }
+  else{
+    showMenu = "menu"
+  }
   return (
     <nav>
       <div className="logo">
@@ -11,7 +19,7 @@ function Navbar() {
           <img src={Logo} alt="logo" />
         </Link>
       </div>
-      <ul className="menu">
+      <ul className={showMenu}>
         <li>
           <Link to="/subjects">Předměty</Link>
         </li>
@@ -25,6 +33,7 @@ function Navbar() {
           <a href="#f">Účet</a>
         </li>
       </ul>
+      <button className="mobile-button" onClick={() => setMobile(!mobile)}>kkkkk</button>
     </nav>
   );
 }
