@@ -5,6 +5,8 @@ export class About extends Component {
     return (
       <main>
         <h1>O nás</h1>
+        <p>Author's portfolio <a href="https://author.learnit.cz">author.learnit.cz</a></p>
+        <br/>
         <p>Tohle je stránka která ještě nefunguje.</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
