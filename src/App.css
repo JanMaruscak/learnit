@@ -314,17 +314,24 @@ footer > img {
     display: block;
   }
   nav > .menu {
-    display: inline;
+    display: inline-block;
     position: absolute;
     list-style: none;
     background-color: rgb(0, 0, 0, 0.9);
     margin-top: 10vw;
     width: 100%;
-    text-align: center;
   }
   nav > .menu a {
     text-decoration: none;
     color: white;
+    width: 70%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  nav > .menu a:hover {
+    color: #90ee90;
+    background-color: inherit;
   }
   nav > .menu > li:first-of-type{
     margin-left: 0;
