@@ -20,6 +20,7 @@ function Main() {
         <h1 id="main-h1">Nejčtenější články</h1>
         <div className="articles">
           <ArticleLink
+            url="https://www.google.com"
             imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
             imgAlt="kocicka"
             name="Kocicka"

@@ -1,22 +1,5 @@
 import React from "react";
 import Default from './SubjectPages/Default'
-
-// var page;
-// export default function SubjectPage({match}) {
-//   function TryGetPage() {
-//     if(true){
-//       page = require('./SubjectPages/Fyzika').default
-//       return page;
-//     }
-//   }
-//   const ComponentToRender = page;
-//   TryGetPage()
-//   return <ComponentToRender/>
-// }
-
-// if(ComponentToRender == null){
-//   ComponentToRender == <main><h1>Error</h1></main>;
-// }
 const tryRequire = (path) => {
   try {
    return require(`${path}`);

@@ -18,7 +18,8 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/subjects" exact component={Subjects} />
         <Route path="/support" component={Support}/>
-        <Route path="/subjects/:name" component={SubjectPage} />
+        <Route path="/subjects/:subjectName" component={SubjectPage} />
+        <Route path="/subjects/:subjectName/:article" component={SubjectPage} />
       </Switch>
       <Footer />
     </Router>
