@@ -33,7 +33,7 @@ function Navbar() {
           <a href="#f">Účet</a>
         </li>
       </ul>
-      <button className="mobile-button" onClick={() => setMobile(!mobile)}>kkkkk</button>
+      <span style={{alignSelf:"center", color:"#90ee90"}} class="fas fa-bars fa-2x mobile-button" onClick={() => setMobile(!mobile)}></span>
     </nav>
   );
 }

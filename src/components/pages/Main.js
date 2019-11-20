@@ -13,10 +13,11 @@ function Main() {
           <li>Najdeš zde vše co tě napadne</li>
         </ul>
         <h2>Tak čím začneš?</h2>
-        <button className="scroll-down-btn">Scroll down</button>
+        <span className="fas fa-angle-down fa-7x scroll-down-btn"></span>
+        {/* <button className="scroll-down-btn" onClick="#main-h1">Scroll down</button> */}
       </div>
       <main>
-        <h1>Nejčtenější články</h1>
+        <h1 id="main-h1">Nejčtenější články</h1>
         <div className="articles">
           <ArticleLink
             imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
