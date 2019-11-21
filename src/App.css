@@ -16,8 +16,8 @@ a {
 nav {
   top: 0;
   background-color: #4169e1; /*#1E90FF;#20639B;*/
-  font-size: 2vw;
-  height: 3.5vw;
+  font-size: 34px;
+  height: 60px;
   letter-spacing: 0.5px;
   width: 100%;
   justify-content: center;
@@ -30,8 +30,8 @@ nav > .mobile-button {
 nav > .menu a {
   color: white;
   background-color: #4169e1; /*#007bff;/*#20639B;*/
-  padding: 0 1vw;
-  line-height: 3.5vw;
+  padding: 0 15px;
+  line-height: 60px;
   display: block;
 }
 nav > .menu {
@@ -62,19 +62,15 @@ nav > .menu > li:first-of-type {
 }
 
 .main > h1 {
-  padding-top: 2.5vw;
-  font-size: 4.5vw;
+  padding-top: 40px;
+  font-size: 80px;
 }
 .main > h2 {
-  margin-top: 7vw;
-  font-size: 3.5vw;
+  margin-top: 140px;
+  font-size: 70px;
 }
-
-@media screen and (max-width: 800px) {
-}
-
 nav > .logo {
-  width: 3.5vw;
+  width: 60px;
 }
 
 .subjects {
@@ -89,14 +85,14 @@ nav > .logo {
   cursor: pointer;
   outline: none;
   text-decoration: none;
-  padding: 1.5vw;
-  margin: 0.5vw;
-  font-size: 2.5vw;
-  width: 16vw;
-  height: 5vw;
+  padding: 20px;
+  margin: 8px;
+  font-size: 46px;
+  width: 300px;
+  height: 100px;
   border: 0;
-  border-radius: 0.75vw;
-  line-height: 5vw;
+  border-radius: 10px;
+  line-height: 100px;
   color: #000;
 
   background-color: royalblue;
@@ -148,8 +144,8 @@ nav > .logo {
   cursor: pointer;
   outline: none;
   text-decoration: none;
-  padding: 1vw;
-  margin: 3vw auto;
+  padding: 20px;
+  margin: 60px auto;
   animation: pulse 2s infinite;
   -webkit-animation: pulse 2s infinite;
 }
@@ -159,19 +155,19 @@ nav > .logo {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(2vw);
+    transform: translateY(40px);
   }
   60% {
-    transform: translateY(-0.3vw);
+    transform: translateY(-7px);
   }
   70% {
-    transform: translateY(0.3vw);
+    transform: translateY(7px);
   }
   80% {
-    transform: translateY(-0.1vw);
+    transform: translateY(-2px);
   }
   90% {
-    transform: translateY(0.1vw);
+    transform: translateY(2px);
   }
   100% {
     transform: translateY(0px);
@@ -182,19 +178,19 @@ nav > .logo {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(2vw);
+    transform: translateY(40px);
   }
   60% {
-    transform: translateY(-0.3vw);
+    transform: translateY(-7px);
   }
   70% {
-    transform: translateY(0.3vw);
+    transform: translateY(7px);
   }
   80% {
-    transform: translateY(-0.1vw);
+    transform: translateY(-2px);
   }
   90% {
-    transform: translateY(0.1vw);
+    transform: translateY(2px);
   }
   100% {
     transform: translateY(0px);
@@ -202,7 +198,7 @@ nav > .logo {
 }
 
 .main-bullet-points {
-  margin-top: 2vw;
+  margin-top: 40px;
 }
 .main-bullet-points > li {
   margin: 5px auto;
@@ -210,7 +206,7 @@ nav > .logo {
   flex-direction: column;
   align-items: center;
   width: 50%;
-  font-size: 2vw;
+  font-size: 40px;
   text-shadow: 3px 3px 2px #474747;
   font-weight: 500;
 }
@@ -223,12 +219,12 @@ main {
   /* min-height: 88vh; */
 }
 main > h1 {
-  padding-top: 0.75vw;
-  padding-bottom: 0.75vw;
-  font-size: 3vw;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 55px;
 }
 main > h2 {
-  font-size: 2vw;
+  font-size: 38px;
   text-align: left;
 }
 main > p {
@@ -236,30 +232,31 @@ main > p {
 }
 footer {
   display: flex;
-  font-size: 1vw;
+  font-size: 17px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1vw;
+  margin-top: 20px;
   background-color: #4169e1;
   color: white;
-  height: 3vw;
+  height: 50px;
   left: 0;
   right: 0;
-  line-height: 3vw;
+  line-height: 50px;
 }
 footer > p {
-  padding-left: 1vw;
+  padding-left: 20px;
 }
 
-footer > img {
-  width: 2vw;
-  padding-left: 1vw;
+footer > .fab {
+  /* width: 40px; */
+  padding-left: 20px;
+  align-self: center;
 }
 .search-container > .support-searchBox {
   margin: 20px;
-  width: 55vw;
-  height: 3vw;
-  font-size: 2vw;
+  width: 1000px;
+  height: 60px;
+  font-size: 36px;
 }
 .articles {
   margin-left: auto;
@@ -269,16 +266,16 @@ footer > img {
   /* justify-content: space-around; */
 }
 .article {
-  width: 20.25vw;
+  width: 350px;
   height: auto;
   background-color: #708090;
-  margin: 0.5vw;
+  margin: 10px;
   overflow: hidden;
   display: inline-block;
 }
 .article > h2 {
-  padding: 0.25vw;
-  font-size: 1.5vw;
+  padding: 5px;
+  font-size: 25px;
 }
 .article > .container {
   background-color: #708090;
@@ -287,9 +284,9 @@ footer > img {
 .article > .container > .rightBox {
   width: 50%;
   text-align: left;
-  font-size: 1vw;
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -319,6 +316,7 @@ footer > img {
     width: 100%;
   }
   nav > .menu a {
+    font-size: 5vw;
     text-decoration: none;
     color: white;
     width: 70%;

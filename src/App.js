@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Main from "./components/pages/Main";
 import About from "./components/pages/About";
 import Subjects from "./components/pages/Subjects";
-import Footer from "./components/pages/Footer";
+import Footer from "./components/Footer";
 import SubjectPage from "./components/pages/SubjectPage";
 import "./App.css";
 import Support from "./components/pages/Support";
