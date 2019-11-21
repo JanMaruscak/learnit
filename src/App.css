@@ -398,10 +398,14 @@ footer > .fab {
     font-size: 8vw;
   }
   .main > h2 {
+    margin-top: 15vw;
     font-size: 6vw;
   }
   .subjects {
     width: 100%;
+  }
+  .scroll-down-btn {
+    margin: 0vw auto;
   }
   .subject-button {
     font-size: 6vw;
