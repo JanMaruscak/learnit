@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Logo from "../logo.svg";
 
@@ -33,7 +33,7 @@ function Navbar() {
           <a href="#f">Účet</a>
         </li>
       </ul>
-      <span style={{alignSelf:"center", color:"#90ee90"}} class="fas fa-bars fa-2x mobile-button" onClick={() => setMobile(!mobile)}></span>
+      <span style={{alignSelf:"center", color:"#90ee90"}} className="fas fa-bars fa-2x mobile-button" onClick={() => setMobile(!mobile)}></span>
     </nav>
   );
 }

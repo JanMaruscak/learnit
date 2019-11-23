@@ -1,5 +1,5 @@
 import React from "react";
-import Default from './SubjectPages/Default'
+import Default from '../Default'
 const tryRequire = (path) => {
   try {
    return require(`${path}`);
@@ -7,12 +7,11 @@ const tryRequire = (path) => {
    return null;
   }
 };
-
-class SubjectPage extends React.Component {
+class ArticlePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      subject: props.match.params.subjectName
+      article: props.match.params.articleName
     };
   }
  
@@ -25,12 +24,14 @@ class SubjectPage extends React.Component {
     // if (file.exists()) {
     //   return null;
     // }
-    
-    const Page = tryRequire(`./SubjectPages/${this.state.subject}`) ? tryRequire(`./SubjectPages/${this.state.subject}`).default 
+ 
+    console.log(this.state.article)
+    console.log("article")
+    const Page = tryRequire(`./ArticlePages/${this.state.article}`) ? tryRequire(`./ArticlePages/${this.state.article}`).default 
    : Default;
     //const Page = require(`./SubjectPages/${this.state.subject}`).default;
     return (<Page />);
   }
 }
 
-export default SubjectPage;
+export default ArticlePage;

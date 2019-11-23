@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import SubjectPage from "./components/pages/SubjectPage";
 import "./App.css";
 import Support from "./components/pages/Support";
+import NotFound from "./components/Default"
+import ArticlePage from "./components/pages/ArticlePage"
 
 function App() {
   return (
@@ -18,8 +20,9 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/subjects" exact component={Subjects} />
         <Route path="/support" component={Support}/>
-        <Route path="/subjects/:subjectName" component={SubjectPage} />
-        <Route path="/subjects/:subjectName/:article" component={SubjectPage} />
+        <Route path="/subjects/:subjectName" exact component={SubjectPage} />
+        <Route path="/subjects/:subjectName/:articleName" exact component={ArticlePage} />
+        <Route path="*" component={NotFound} />
       </Switch>
       <Footer />
     </Router>

@@ -3,11 +3,15 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-
-body {
-  background-color: aliceblue;
-  color: black;
+html {
   scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+  color: black;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
 }
 a {
   text-decoration: none;
@@ -61,11 +65,11 @@ nav > .menu > li:first-of-type {
   /* min-height: 88vh; */
 }
 
-.main > h1 {
+.main > h2 {
   padding-top: 40px;
   font-size: 80px;
 }
-.main > h2 {
+.main > h3 {
   margin-top: 140px;
   font-size: 70px;
 }
@@ -215,6 +219,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  color: black;
 
   /* min-height: 88vh; */
 }
@@ -244,13 +249,18 @@ footer {
   line-height: 50px;
 }
 footer > p {
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
-footer > .fab {
+footer .fab {
   /* width: 40px; */
   padding-left: 20px;
   align-self: center;
+}
+footer a {
+  align-self: center;
+  color: white;
+  line-height: 50%;
 }
 .search-container > .support-searchBox {
   margin: 20px;
@@ -265,6 +275,9 @@ footer > .fab {
   flex-wrap: wrap;
   /* justify-content: space-around; */
 }
+.articles > a {
+  color: black;
+}
 .article {
   width: 350px;
   height: auto;
@@ -272,10 +285,11 @@ footer > .fab {
   margin: 10px;
   overflow: hidden;
   display: inline-block;
+  border-radius: 5px;
 }
 .article > h2 {
-  padding: 5px;
-  font-size: 25px;
+  padding: 5px 0px 0px 0px;
+  font-size: 26px;
 }
 .article > .container {
   background-color: #708090;
@@ -285,8 +299,7 @@ footer > .fab {
   width: 50%;
   text-align: left;
   font-size: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -294,6 +307,7 @@ footer > .fab {
 .article > .container > .leftBox {
   text-align: left;
   width: 50%;
+  padding: 10px;
 }
 .article > .container > .leftBox > img {
   width: 100%;
@@ -328,7 +342,7 @@ footer > .fab {
     color: #90ee90;
     background-color: inherit;
   }
-  nav > .menu > li:first-of-type{
+  nav > .menu > li:first-of-type {
     margin-left: 0;
   }
   nav > .menu > li {
@@ -394,10 +408,10 @@ footer > .fab {
     text-align: left;
     width: 50%;
   }
-  .main > h1 {
+  .main > h2 {
     font-size: 8vw;
   }
-  .main > h2 {
+  .main > h3 {
     margin-top: 15vw;
     font-size: 6vw;
   }
@@ -433,11 +447,6 @@ footer > .fab {
     line-height: 9vw;
   }
   footer > p {
-    padding-left: 3vw;
-  }
-
-  footer > img {
-    width: 5vw;
     padding-left: 3vw;
   }
 }

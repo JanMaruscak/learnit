@@ -3,7 +3,7 @@ import React from 'react'
 export default function Test() {
     return (
         <main>
-            <h1>Error 404: not found</h1>
+            <h1>Test</h1>
         </main>
     )
 }
