@@ -6,16 +6,16 @@ export default function Subjects() {
     <main>
       <h1>Předměty</h1>
       <div className="subjects">
-        <Subject name="Fyzika" hasContent={false} />
-        <Subject name="Matematika" hasContent={false} />
-        <Subject name="Dějepis" hasContent={false} />
-        <Subject name="Zeměpis" hasContent={false} />
-        <Subject name="Snippets" hasContent={true}/>
-        <Subject name="Fyzika" hasContent={false} />
-        <Subject name="Fyzika" hasContent={false} />
-        <Subject name="Fyzika" hasContent={false} />
-        <Subject name="Fyzika" hasContent={false} />
-        <Subject name="Fyzika" hasContent={false} />
+        <Subject name="Fyzika" />
+        <Subject name="Matematika" />
+        <Subject name="Dějepis" />
+        <Subject name="Zeměpis" />
+        <Subject name="Snippets" />
+        <Subject name="Fyzika" />
+        <Subject name="Fyzika" />
+        <Subject name="Fyzika" />
+        <Subject name="Fyzika" />
+        <Subject name="Fyzika" />
       </div>
     </main>
   );

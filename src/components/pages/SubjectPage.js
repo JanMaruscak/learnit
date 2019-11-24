@@ -42,7 +42,6 @@ class SubjectPage extends React.Component {
     // if (file.exists()) {
     //   return null;
     // }
-    console.log(this.state.subject)
     
     const Page = tryRequire(`./SubjectPages/${this.state.subject}`) ? tryRequire(`./SubjectPages/${this.state.subject}`).default 
    : Default;

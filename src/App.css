@@ -61,13 +61,12 @@ nav > .menu > li:first-of-type {
   text-shadow: 3px 5px 2px #474747; /*text-shadow: 0 2px 4px rgba(41,48,59,.55);*/
   text-align: center;
   /*text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);*/
-
-  /* min-height: 88vh; */
 }
 
 .main > h2 {
   padding-top: 40px;
   font-size: 80px;
+  letter-spacing: 1px;
 }
 .main > h3 {
   margin-top: 140px;
@@ -149,7 +148,7 @@ nav > .logo {
   outline: none;
   text-decoration: none;
   padding: 20px;
-  margin: 60px auto;
+  margin: 50px auto;
   animation: pulse 2s infinite;
   -webkit-animation: pulse 2s infinite;
 }
@@ -202,17 +201,23 @@ nav > .logo {
 }
 
 .main-bullet-points {
-  margin-top: 40px;
+  margin: 40px auto;
+  text-align: center;
+  width: 40%;
+  list-style: none;
 }
 .main-bullet-points > li {
-  margin: 5px auto;
-  text-align: left;
+  margin: 30px auto;
+  text-align: center;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
-  font-size: 40px;
+  font-size: 42px;
   text-shadow: 3px 3px 2px #474747;
-  font-weight: 500;
+}.main-bullet-points > li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: rgb(255, 255, 255,0.8);
 }
 main {
   text-align: center;

@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import { Link } from "react-router-dom";
+import React, {useState, useEffect} from "react";
+import { Link, withRouter } from "react-router-dom";
 import Logo from "../logo.svg";
 
 function Navbar() {
@@ -12,6 +12,7 @@ function Navbar() {
   else{
     showMenu = "menu"
   }
+
   return (
     <nav>
       <div className="logo">

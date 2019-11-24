@@ -25,8 +25,6 @@ class ArticlePage extends React.Component {
     //   return null;
     // }
  
-    console.log(this.state.article)
-    console.log("article")
     const Page = tryRequire(`./ArticlePages/${this.state.article}`) ? tryRequire(`./ArticlePages/${this.state.article}`).default 
    : Default;
     //const Page = require(`./SubjectPages/${this.state.subject}`).default;
