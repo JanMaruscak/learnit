@@ -5,7 +5,7 @@ export default function ArticleLink(props) {
   const link = `/subjects/${props.subject}/${props.url}`
   console.log(link)
   return (
-    <article className="article" style={{position:"relative"}}>
+    <article className="article" style={{ position: "relative" }}>
       <h2>{props.name}</h2>
       <hr style={{ width: "100%", borderColor: "black" }} />
       <div className="container">
@@ -15,17 +15,17 @@ export default function ArticleLink(props) {
         <div className="rightBox">
           <p>{props.text}</p>
         </div>
-      </div>      
-    <Link to={link}><span style={spanLinkStyle}></span></Link>
+      </div>
+      <Link to={link}><span style={spanLinkStyle}></span></Link>
     </article>
   );
 }
 
 const spanLinkStyle = {
-  width:"100%",
-  height:"100%",
-  position:"absolute",
-  top:"0",
-  left:"0",
-  zIndex:"1"
+  width: "100%",
+  height: "100%",
+  position: "absolute",
+  top: "0",
+  left: "0",
+  zIndex: "1"
 }
