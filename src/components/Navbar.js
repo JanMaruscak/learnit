@@ -31,7 +31,7 @@ function Navbar() {
           <Link to="/support">Support</Link>
         </li>
         <li>
-          <a href="#f">Účet</a>
+          <Link to="/account">Účet</Link>
         </li>
       </ul>
       <span style={{alignSelf:"center", color:"#90ee90"}} className="fas fa-bars fa-2x mobile-button" onClick={() => setMobile(!mobile)}></span>

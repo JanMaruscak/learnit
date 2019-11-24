@@ -42,13 +42,15 @@ nav > .menu {
   list-style: none;
   display: flex;
 }
-
 nav > .menu a:hover {
   color: #90ee90;
   background-color: #2f59d4;
 }
 nav > .menu > li:first-of-type {
   margin-left: 75px;
+}
+nav > .logo {
+  width: 60px;
 }
 
 .main {
@@ -72,9 +74,6 @@ nav > .menu > li:first-of-type {
   margin-top: 140px;
   font-size: 70px;
 }
-nav > .logo {
-  width: 60px;
-}
 
 .subjects {
   margin-left: auto;
@@ -97,41 +96,7 @@ nav > .logo {
   border-radius: 10px;
   line-height: 100px;
   color: #000;
-
   background-color: royalblue;
-  /* background: rgba(144, 238, 144, 1);
-  background: -moz-linear-gradient(
-    -45deg,
-    rgba(144, 238, 144, 1) 0%,
-    rgba(65, 105, 225, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    right bottom,
-    color-stop(0%, rgba(144, 238, 144, 1)),
-    color-stop(100%, rgba(65, 105, 225, 1))
-  );
-  background: -webkit-linear-gradient(
-    -45deg,
-    rgba(144, 238, 144, 1) 0%,
-    rgba(65, 105, 225, 1) 100%
-  );
-  background: -o-linear-gradient(
-    -45deg,
-    rgba(144, 238, 144, 1) 0%,
-    rgba(65, 105, 225, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    -45deg,
-    rgba(144, 238, 144, 1) 0%,
-    rgba(65, 105, 225, 1) 100%
-  );
-  background: linear-gradient(
-    135deg,
-    rgba(144, 238, 144, 1) 0%,
-    rgba(65, 105, 225, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#90ee90', endColorstr='#4169e1', GradientType=1 ); */
 }
 
 .subject-button:hover,
@@ -212,12 +177,13 @@ nav > .logo {
   flex-direction: column;
   font-size: 42px;
   text-shadow: 3px 3px 2px #474747;
-}.main-bullet-points > li::after {
+}
+.main-bullet-points > li::after {
   content: "";
   display: block;
   height: 2px;
   width: 100%;
-  background: rgb(255, 255, 255,0.8);
+  background: rgb(255, 255, 255, 0.8);
 }
 main {
   text-align: center;
@@ -266,6 +232,17 @@ footer a {
   align-self: center;
   color: white;
   line-height: 50%;
+}
+.login{
+  width: 300px;
+  margin: auto;
+}
+.login > P{
+  font-size: 22px;
+}
+.login > input{
+  width: 200px;
+  font-size: 22px;
 }
 .search-container > .support-searchBox {
   margin: 20px;

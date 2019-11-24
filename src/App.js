@@ -10,6 +10,7 @@ import "./App.css";
 import Support from "./components/pages/Support";
 import NotFound from "./components/Default"
 import ArticlePage from "./components/pages/ArticlePage"
+import Account from "./components/pages/User"
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="/" exact component={Main} />
         <Route path="/about" component={About} />
         <Route path="/subjects" exact component={Subjects} />
-        <Route path="/support" component={Support}/>
+        <Route path="/support" component={Support} />
+        <Route path="/account" component={Account} />
         <Route path="/subjects/:subjectName" exact component={SubjectPage} />
         <Route path="/subjects/:subjectName/:articleName" exact component={ArticlePage} />
         <Route path="*" component={NotFound} />
