@@ -62,6 +62,7 @@ nav > .logo {
   color: #90ee90;
   text-shadow: 3px 5px 2px #474747; /*text-shadow: 0 2px 4px rgba(41,48,59,.55);*/
   text-align: center;
+  min-height: 100vh;
   /*text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);*/
 }
 
@@ -165,7 +166,7 @@ nav > .logo {
   }
 }
 .points {
-  justify-content: space-around;
+  min-height: 100vh;
 }
 .point{
   margin-left: auto;
@@ -177,26 +178,27 @@ nav > .logo {
   justify-content: center;
 } 
 .point  img{
-  width: 300px;
+  width: 325px;
   /* margin: 40px; */
 }
 .point .container-right{
-  margin: 40px;
+  margin: 50px;
   width: 30%;
   text-align: left;
 }
 .point .container-left{
-  margin: 40px;
+  margin: 50px;
   width: 30%;
   text-align: right;  
 }
 .point h2{
   font-size: 28px;
-  margin: 20px;
+  margin: 0px 0px 20px 20px;
   text-align: inherit;
 }
 .point p{
   font-size: 20px;
+  text-align: justify;
 }
 .main-bullet-points {
   margin: 40px auto;
@@ -423,6 +425,45 @@ footer a {
     text-align: left;
     width: 50%;
   }
+
+  .point > .container{
+		display: -webkit-flex; /* Safari */		
+    flex-direction: column;
+  } 
+  .point  img{
+    width: 300px;
+    /* margin: 40px; */
+  }
+  .point .container-right{
+    margin: 30px 0px 30px 0px;
+    width: 90%;
+    text-align: center;
+    order: 2;
+  }
+  .change > .container-left{
+    margin: 30px 0px 30px 0px !important;
+    order: 2 !important;
+  }
+  .change > .container-right{
+    margin: 40px 30px 0px 30px !important;
+    order: 1 !important;
+  }
+  .point .container-left{
+    margin: 40px 30px 0px 30px;
+    width: 90%;
+    text-align: center;  
+    order: 1;
+  }
+  .point h2{
+    font-size: 28px;
+    margin: 0px 0px 20px 0px;
+    text-align: inherit;
+  }
+  .point p{
+    font-size: 20px;
+    text-align: center;
+  }
+
   .main > h2 {
     font-size: 8vw;
   }

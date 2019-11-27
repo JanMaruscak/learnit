@@ -21,35 +21,37 @@ function Main() {
         ></span>
       </div>
       <div className="points">
-          <div className="point">
-              <div className="container">
-                  <div className="container-left">
-                    <img src={WindowsSVG} alt="windows illustration" />
-                  </div>
-                  <div className="container-right">
-                    <h2>Konec hledání</h2>
-                    <p>Taky nás nebaví ztrácet čas hledáním informací.</p>
-                  </div>
-              </div>
-            </div>
 
-          <div className="point">
-            <div className="container">
-              <div className="container-left">
-                <h2>Spolehlivé zdroje</h2>
-                <p>
-                  Vybíráme ty nejlepší zdroje informací. Lorem ipsum, dolor sit
-                  amet consectetur adipisicing elit. Dolor laboriosam quos
-                  deserunt, provident id earum aspernatur quidem excepturi odit.
-                  Doloremque totam a laudantium nobis quod, id vero at numquam
-                  distinctio.
-                </p>
-              </div>
-              <div className="container-right">
-                <img src={SearchingSVG} alt="searching illustration" />
-              </div>
+        <div className="point">
+          <div className="container">
+            <div className="container-left">
+              <img src={WindowsSVG} alt="windows illustration" />
             </div>
+            <div className="container-right">
+              <h2>Konec hledání</h2>
+              <p>Taky nás nebaví ztrácet čas hledáním informací. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et suscipit molestiae sint ad ipsam, nostrum odio eos dignissimos necessitatibus earum accusamus, illum similique omnis quam consequatur sapiente eveniet voluptatem?</p>
+            </div>
+          </div>
         </div>
+
+        <div className="point">
+          <div className="container change">
+            <div className="container-left">
+              <h2>Spolehlivé zdroje</h2>
+              <p>
+                Vybíráme ty nejlepší zdroje informací. Lorem ipsum, dolor sit
+                amet consectetur adipisicing elit. Dolor laboriosam quos
+                deserunt, provident id earum aspernatur quidem excepturi odit.
+                Doloremque totam a laudantium nobis quod, id vero at numquam
+                distinctio.
+              </p>
+            </div>
+            <div className="container-right">
+              <img src={SearchingSVG} alt="searching illustration" />
+            </div>
+          </div>
+        </div>
+
         <div className="point">
           <div className="container">
             <div className="container-left">
@@ -66,6 +68,7 @@ function Main() {
             </div>
           </div>
         </div>
+
       </div>
       <main>
         <h1 id="main-h1">Nejčtenější články</h1>
