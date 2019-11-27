@@ -1,2 +1,3 @@
+Sitemap: https://learnit.cz/sitemap.xml
 User-agent: *
 Disallow:

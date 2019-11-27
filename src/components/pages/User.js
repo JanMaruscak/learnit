@@ -9,7 +9,7 @@ export default function User() {
                 <input type="email" />
                 <p>Heslo:</p>
                 <input type="password" />
-                <input type="submit" value="Registrovat"/>
+                <input type="submit" value="Registrovat" className="login-button"/>
             </form>
         </main>
     )

@@ -9,7 +9,7 @@ export default function Matematika() {
                 <ArticleLink name="Fourierova transformace" />
                 <ArticleLink
                     url="Test"
-                    imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+                    imgUrl=""
                     imgAlt="kocicka"
                     name="Test"
                     text="Testovací článek"

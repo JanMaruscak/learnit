@@ -7,20 +7,21 @@ function Main() {
   return (
     <React.Fragment>
       <div className="main">
-        <h2>Nejlepší stránka na učení</h2>
+        <h2>Proč Learn It?</h2>
+        {/* <h2>Nejlepší stránka na učení</h2> */}
         {/* <ul className="main-bullet-points">
           <li>Shromáždění nejkvalitnějších zdrojů</li>
           <li>Neustále aktualizované články</li>
           <li>Souhrn toho nejdůležitějšího</li>
           <li>Garance vrácení peněz</li>
         </ul> */}
-        <h3>Tak čím začneš?</h3>
+        {/* <h3>Tak čím začneš?</h3> */}
         <span
           className="fas fa-angle-down fa-7x scroll-down-btn"
-          onClick={() => (window.location.hash = "main-h1")}
+          onClick={() => (window.location.hash = "points")}
         ></span>
       </div>
-      <div className="points">
+      <div className="points" id="points">
 
         <div className="point">
           <div className="container">

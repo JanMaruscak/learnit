@@ -26,6 +26,7 @@ nav {
   width: 100%;
   justify-content: center;
   display: flex;
+  display: -webkit-flex;
 }
 nav > .mobile-button {
   display: none;
@@ -41,6 +42,7 @@ nav > .menu a {
 nav > .menu {
   list-style: none;
   display: flex;
+  display: -webkit-flex;
 }
 nav > .menu a:hover {
   color: #90ee90;
@@ -59,6 +61,9 @@ nav > .logo {
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
 
+  align-content: center;
+  align-items: center;
+  
   color: #90ee90;
   text-shadow: 3px 5px 2px #474747; /*text-shadow: 0 2px 4px rgba(41,48,59,.55);*/
   text-align: center;
@@ -67,9 +72,11 @@ nav > .logo {
 }
 
 .main > h2 {
-  padding-top: 40px;
-  font-size: 80px;
+  padding-top: 30vh;
+  text-align: center;
+  font-size: 88px;
   letter-spacing: 1px;
+  
 }
 .main > h3 {
   margin-top: 140px;
@@ -97,7 +104,7 @@ nav > .logo {
   border-radius: 10px;
   line-height: 100px;
   color: #000;
-  background-color: royalblue;
+  background-color: #4169e1;
 }
 
 .subject-button:hover,
@@ -165,38 +172,50 @@ nav > .logo {
     transform: translateY(0px);
   }
 }
+@keyframes fly-in-left {
+  0% {
+    margin-right: 500px;
+    opacity: 0;
+  }
+  100%{
+    margin-right: 50px;
+    opacity: 1;
+  }
+}
 .points {
   min-height: 100vh;
 }
-.point{
+.point {
   margin-left: auto;
   margin-right: auto;
 }
-.point > .container{
+.point > .container {
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   justify-content: center;
-} 
-.point  img{
+}
+.point img {
   width: 325px;
   /* margin: 40px; */
 }
-.point .container-right{
+.point .container-right {
   margin: 50px;
   width: 30%;
   text-align: left;
 }
-.point .container-left{
+.point .container-left {
   margin: 50px;
   width: 30%;
-  text-align: right;  
+  text-align: right;
+  /* animation: fly-in-left 1s; */
 }
-.point h2{
+.point h2 {
   font-size: 28px;
-  margin: 0px 0px 20px 20px;
+  margin: 0px 20px 20px 20px;
   text-align: inherit;
 }
-.point p{
+.point p {
   font-size: 20px;
   text-align: justify;
 }
@@ -232,7 +251,7 @@ main {
 main > h1 {
   padding-top: 12px;
   padding-bottom: 12px;
-  font-size: 55px;
+  font-size: 48px;
 }
 main > h2 {
   font-size: 38px;
@@ -243,6 +262,7 @@ main > p {
 }
 footer {
   display: flex;
+  display: -webkit-flex;
   font-size: 17px;
   margin-left: auto;
   margin-right: auto;
@@ -268,16 +288,19 @@ footer a {
   color: white;
   line-height: 50%;
 }
-.login{
+.login {
   width: 300px;
   margin: auto;
 }
-.login > P{
+.login > p {
   font-size: 22px;
 }
-.login > input{
+.login > input {
   width: 200px;
   font-size: 22px;
+}
+.login > .login-button{
+  margin: 20px;  
 }
 .search-container > .support-searchBox {
   margin: 20px;
@@ -311,6 +334,7 @@ footer a {
 .article > .container {
   background-color: #708090;
   display: flex;
+  display: -webkit-flex;
 }
 .article > .container > .rightBox {
   width: 50%;
@@ -400,22 +424,23 @@ footer a {
     width: 90%;
   }
   .article {
-    width: 45vw;
+    width: 80vw;
     height: auto;
     margin: 1vw;
   }
   .article > h2 {
     padding: 1vw;
-    font-size: 3vw;
+    font-size: 6vw;
   }
   .article > .container {
     background-color: #708090;
     display: flex;
+    display: -webkit-flex;
   }
   .article > .container > .rightBox {
     width: 50%;
     text-align: left;
-    font-size: 2vw;
+    font-size: 4vw;
     padding-left: 0.5vw;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -426,46 +451,45 @@ footer a {
     width: 50%;
   }
 
-  .point > .container{
-		display: -webkit-flex; /* Safari */		
+  .point > .container {
     flex-direction: column;
-  } 
-  .point  img{
+  }
+  .point img {
     width: 300px;
     /* margin: 40px; */
   }
-  .point .container-right{
+  .point .container-right {
     margin: 30px 0px 30px 0px;
     width: 90%;
     text-align: center;
     order: 2;
   }
-  .change > .container-left{
+  .change > .container-left {
     margin: 30px 0px 30px 0px !important;
     order: 2 !important;
   }
-  .change > .container-right{
+  .change > .container-right {
     margin: 40px 30px 0px 30px !important;
     order: 1 !important;
   }
-  .point .container-left{
+  .point .container-left {
     margin: 40px 30px 0px 30px;
     width: 90%;
-    text-align: center;  
+    text-align: center;
     order: 1;
   }
-  .point h2{
+  .point h2 {
     font-size: 28px;
     margin: 0px 0px 20px 0px;
     text-align: inherit;
   }
-  .point p{
+  .point p {
     font-size: 20px;
     text-align: center;
   }
 
   .main > h2 {
-    font-size: 8vw;
+    font-size: 10vw;
   }
   .main > h3 {
     margin-top: 15vw;
@@ -479,7 +503,7 @@ footer a {
   }
   .subject-button {
     font-size: 6vw;
-    margin: 2vw;
+    margin: 1.5vw;
     padding: 4.5vw;
     width: 35vw;
     height: 10vw;
@@ -496,6 +520,12 @@ footer a {
     width: 90%;
     margin-left: 0;
     margin-right: 0;
+  }
+  .search-container > .support-searchBox {
+    margin: 20px;
+    width: 85vw;
+    height: 60px;
+    font-size: 36px;
   }
   footer {
     font-size: 3vw;
