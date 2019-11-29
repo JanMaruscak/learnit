@@ -63,7 +63,7 @@ nav > .logo {
 
   align-content: center;
   align-items: center;
-  
+
   color: #90ee90;
   text-shadow: 3px 5px 2px #474747; /*text-shadow: 0 2px 4px rgba(41,48,59,.55);*/
   text-align: center;
@@ -76,7 +76,6 @@ nav > .logo {
   text-align: center;
   font-size: 88px;
   letter-spacing: 1px;
-  
 }
 .main > h3 {
   margin-top: 140px;
@@ -109,7 +108,7 @@ nav > .logo {
 
 .subject-button:hover,
 .subject-button:focus {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   -webkit-box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.75);
@@ -177,7 +176,7 @@ nav > .logo {
     margin-right: 500px;
     opacity: 0;
   }
-  100%{
+  100% {
     margin-right: 50px;
     opacity: 1;
   }
@@ -219,26 +218,6 @@ nav > .logo {
   font-size: 20px;
   text-align: justify;
 }
-.main-bullet-points {
-  margin: 40px auto;
-  text-align: center;
-  width: 40%;
-  list-style: none;
-}
-.main-bullet-points > li {
-  margin: 30px auto;
-  text-align: center;
-  flex-direction: column;
-  font-size: 42px;
-  text-shadow: 3px 3px 2px #474747;
-}
-.main-bullet-points > li::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: rgb(255, 255, 255, 0.8);
-}
 main {
   text-align: center;
   margin-left: auto;
@@ -251,7 +230,7 @@ main {
 main > h1 {
   padding-top: 12px;
   padding-bottom: 12px;
-  font-size: 48px;
+  font-size: 42px;
 }
 main > h2 {
   font-size: 38px;
@@ -296,15 +275,34 @@ footer a {
   font-size: 22px;
 }
 .login > input {
-  width: 200px;
-  font-size: 22px;
+  width: 250px;
+  margin: 5px;
+  font-size: 18px;
+  padding: 3px 5px;
 }
-.login > .login-button{
-  margin: 20px;  
+.login > .login-button {
+  margin: 20px;
+  height: 40px;
+  border: 1px solid #dadce0;
+  font-weight: bold;
+  transition: all 0.25s ease-in-out;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.login > .login-button:hover,
+.login > .login-button:focus {
+  /* background-color: #2f59d4; */
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  transform: translateX(2px) translateY(2px);
 }
 .search-container > .support-searchBox {
   margin: 20px;
-  width: 1000px;
+  padding: 6px 10px;
+  width: 900px;
   height: 60px;
   font-size: 36px;
 }
@@ -312,7 +310,6 @@ footer a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  flex-wrap: wrap;
   /* justify-content: space-around; */
 }
 .articles > a {
@@ -326,6 +323,9 @@ footer a {
   overflow: hidden;
   display: inline-block;
   border-radius: 5px;
+}
+.article:hover{
+  transform: translateY(-2px);
 }
 .article > h2 {
   padding: 5px 0px 0px 0px;
@@ -525,7 +525,7 @@ footer a {
     margin: 20px;
     width: 85vw;
     height: 60px;
-    font-size: 36px;
+    font-size: 28px;
   }
   footer {
     font-size: 3vw;

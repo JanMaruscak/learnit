@@ -16,13 +16,11 @@ function Main() {
           <li>Garance vrácení peněz</li>
         </ul> */}
         {/* <h3>Tak čím začneš?</h3> */}
-        <span
-          className="fas fa-angle-down fa-7x scroll-down-btn"
-          onClick={() => (window.location.hash = "points")}
-        ></span>
+        <a href="#points">
+          <span className="fas fa-angle-down fa-7x scroll-down-btn"></span>
+        </a>
       </div>
       <div className="points" id="points">
-
         <div className="point">
           <div className="container">
             <div className="container-left">
@@ -30,7 +28,13 @@ function Main() {
             </div>
             <div className="container-right">
               <h2>Konec hledání</h2>
-              <p>Taky nás nebaví ztrácet čas hledáním informací. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et suscipit molestiae sint ad ipsam, nostrum odio eos dignissimos necessitatibus earum accusamus, illum similique omnis quam consequatur sapiente eveniet voluptatem?</p>
+              <p>
+                Taky nás nebaví ztrácet čas hledáním informací. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Optio et suscipit
+                molestiae sint ad ipsam, nostrum odio eos dignissimos
+                necessitatibus earum accusamus, illum similique omnis quam
+                consequatur sapiente eveniet voluptatem?
+              </p>
             </div>
           </div>
         </div>
@@ -69,7 +73,6 @@ function Main() {
             </div>
           </div>
         </div>
-
       </div>
       <main>
         <h1 id="main-h1">Nejčtenější články</h1>

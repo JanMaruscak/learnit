@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 export default function ArticleLink(props) {
   const link = `/subjects/${props.subject}/${props.url}`
-  console.log(link)
   return (
     <article className="article" style={{ position: "relative" }}>
       <h2>{props.name}</h2>

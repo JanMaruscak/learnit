@@ -6,7 +6,7 @@ function Support() {
       <h1>Jak vám můžeme pomoci?</h1>
       <div className="search-container">
         <input
-          autoFocus
+          // autoFocus
           type="text"
           placeholder="Popište svůj problém..."
           className="support-searchBox"
