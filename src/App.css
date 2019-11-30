@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -439,7 +439,6 @@ footer a {
     margin-left: auto;
   }
   nav > .menu a:hover {
-    color: #90ee90;
     background-color: inherit;
   }
   nav > .menu > li:first-of-type {
@@ -493,7 +492,6 @@ footer a {
     font-size: 6vw;
   }
   .article > .container {
-    background-color: #708090;
     display: flex;
     display: -webkit-flex;
   }
