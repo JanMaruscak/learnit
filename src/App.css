@@ -282,6 +282,11 @@ footer a {
   border: 1px solid #dfe1e5;
   width: 400px;
   height: 300px;
+  transition: all 0.25s ease-in-out;
+}
+.form-container > form:hover, .form-container > form:focus-within{
+  box-shadow: 0 4px 4px 0 rgba(60,64,67,0.2), 0 8px 12px 6px rgba(60,64,67,0.1);
+  
 }
 .login > h2{
   padding: 15px;
@@ -334,12 +339,25 @@ footer a {
   padding: 10px;
   border: 1px solid gray;
   border-left: none;
-  background: none;
+  color: white;
+  
+  background-color: #4169e1;
   font-size: 36px;
   height: 100%;
   top: 0;
   right: 0;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.search-container .fa{
+  transition: all 0.2s ease-in-out;
+}
+.search-container > button:hover{
+  background-color: white;
+  color: #4169e1;
+}
+.search-container > button:hover .fa{
+  transform: rotateY(180deg);
 }
 .search-container::after {
   content: "";
@@ -358,7 +376,7 @@ footer a {
 .article {
   width: 350px;
   height: auto;
-  background-color: #708090;
+  background-color: #8b9bac;
   margin: 10px;
   overflow: hidden;
   display: inline-block;
@@ -371,12 +389,12 @@ footer a {
   padding: 5px 0px 0px 0px;
   font-size: 26px;
 }
-.article > .container {
-  background-color: #708090;
+.article .container {
+  background-color: inherit;
   display: flex;
   display: -webkit-flex;
 }
-.article > .container > .rightBox {
+.article .container .rightBox {
   width: 50%;
   text-align: left;
   font-size: 18px;
@@ -406,6 +424,7 @@ footer a {
     display: inline-block;
     position: absolute;
     list-style: none;
+    color: #4169e1;
     background-color: rgb(0, 0, 0, 0.9);
     margin-top: 10vw;
     width: 100%;

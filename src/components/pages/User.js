@@ -13,7 +13,7 @@ export default function User() {
           <input type="password" placeholder="*********" />
           <button type="submit" className="login-button">Přihlásit se</button>
         </form>
-        <form className="register">
+        <form className="login">
             <h2>Registrace</h2>
           <p>Email:</p>
           <input type="email" placeholder="example@gmail.com" />
