@@ -11,27 +11,14 @@ import Support from "./components/pages/Support";
 import NotFound from "./components/Default";
 import ArticlePage from "./components/pages/ArticlePage";
 import Account from "./components/pages/User";
+import OnRouteChanged from "./components/OnRouteChange";
 
 class App extends React.Component {
-  // static propTypes = {
-  //   location: PropTypes.object.isRequired
-  // }
-
-  // // ...
-
-  // componentDidUpdate(prevProps) {
-  //   if (this.props.location.pathname !== prevProps.location.pathname) {
-  //     this.onRouteChanged();
-  //   }
-  // }
-
-  // onRouteChanged() {
-  //   console.log("ROUTE CHANGED");
-  // }
   render() {
     return (
       <Router>
         <Navbar />
+        <OnRouteChanged />
         <Switch>
           <Route path="/" exact component={Main} />
           <Route path="/about" component={About} />

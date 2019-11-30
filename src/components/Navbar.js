@@ -19,7 +19,7 @@ function Navbar() {
           <img src={Logo} alt="logo" />
         </Link>
       </div>
-      <ul className={showMenu}>
+      <ul className={showMenu} id="nav-menu">
         <li>
           <Link to="/subjects">Předměty</Link>
         </li>
