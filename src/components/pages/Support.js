@@ -11,6 +11,7 @@ function Support() {
           placeholder="Popište svůj problém..."
           className="support-searchBox"
         />
+        <button type="submit"><span class="fa fa-search"></span></button>
         {/* <button><i className="fas fa-search"></i></button> */}
       </div>
     </main>

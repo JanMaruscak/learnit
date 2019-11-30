@@ -1,16 +1,15 @@
-import React, {useState, useEffect} from "react";
-import { Link, withRouter } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../logo.svg";
 
 function Navbar() {
   const [mobile, setMobile] = useState(false);
   let showMenu;
-  
-  if(mobile){
+
+  if (mobile) {
     showMenu = "menu mobile";
-  }
-  else{
-    showMenu = "menu"
+  } else {
+    showMenu = "menu";
   }
 
   return (
@@ -34,7 +33,11 @@ function Navbar() {
           <Link to="/account">Účet</Link>
         </li>
       </ul>
-      <span style={{alignSelf:"center", color:"#90ee90"}} className="fas fa-bars fa-2x mobile-button" onClick={() => setMobile(!mobile)}></span>
+      <span
+        style={{ alignSelf: "center", color: "#90ee90" }}
+        className="fas fa-bars fa-2x mobile-button"
+        onClick={() => setMobile(!mobile)}
+      ></span>
     </nav>
   );
 }

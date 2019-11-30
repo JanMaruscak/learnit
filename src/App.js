@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Main from "./components/pages/Main";
 import About from "./components/pages/About";
@@ -13,17 +13,21 @@ import ArticlePage from "./components/pages/ArticlePage";
 import Account from "./components/pages/User";
 
 class App extends React.Component {
-  static propTypes = {
-    location: React.PropTypes.object.isRequired
-  };
-  componentDidUpdate(prevProps) {
-    if (this.props.location.pathname !== prevProps.location.pathname) {
-      this.onRouteChanged();
-    }
-  }
-  onRouteChanged() {
-    console.log("ROUTE CHANGED");
-  }
+  // static propTypes = {
+  //   location: PropTypes.object.isRequired
+  // }
+
+  // // ...
+
+  // componentDidUpdate(prevProps) {
+  //   if (this.props.location.pathname !== prevProps.location.pathname) {
+  //     this.onRouteChanged();
+  //   }
+  // }
+
+  // onRouteChanged() {
+  //   console.log("ROUTE CHANGED");
+  // }
   render() {
     return (
       <Router>
