@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-display: swap;
 }
 html {
   scroll-behavior: smooth;
@@ -12,7 +13,6 @@ body {
   color: black;
   height: 100%;
   width: 100%;
-  min-height: 100%;
 }
 a {
   text-decoration: none;
@@ -68,7 +68,7 @@ nav > .logo {
   color: #90ee90;
   text-shadow: 3px 5px 2px #474747; /*text-shadow: 0 2px 4px rgba(41,48,59,.55);*/
   text-align: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   /*text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);*/
 }
 
@@ -224,7 +224,8 @@ main {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
+  min-height: calc(100vh - 60px - 50px - 20px); /* - navHeight, -footerHeight, -footerMarginTop */
   color: black;
 
   /* min-height: 88vh; */
@@ -463,9 +464,6 @@ footer a {
   nav > .logo {
     width: 10vw;
     margin-right: 70vw;
-  }
-  main {
-    width: 100%;
   }
   main > * {
     margin-left: auto;

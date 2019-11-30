@@ -1,3 +1,6 @@
 Sitemap: https://learnit.cz/sitemap.xml
 User-agent: *
 Disallow:
+#TWITTER: https://www.twitter.com
+#INSTAGRAM: https://www.instagram.com
+#FACEBOOK: https://www.facebook.com
