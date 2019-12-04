@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function ArticleLink(props) {
   const link = `/subjects/${props.subject}/${props.url}`
   return (
-    <article className="article" style={{ position: "relative" }}>
+    <article className="articleLink" style={{ position: "relative" }}>
       <h2>{props.name}</h2>
       <hr style={{ width: "100%", borderColor: "black" }} />
       <div className="container">

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export class About extends Component {
   render() {
     return (
-      <main>
+      <main className="article">
         <h1>O nás</h1>
         <p>Author's portfolio <a href="https://author.learnit.cz">author.learnit.cz</a></p>
         <br/>

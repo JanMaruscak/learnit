@@ -225,7 +225,9 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  min-height: calc(100vh - 60px - 50px - 20px); /* - navHeight, -footerHeight, -footerMarginTop */
+  min-height: calc(
+    100vh - 60px - 50px - 20px
+  ); /* - navHeight, -footerHeight, -footerMarginTop */
   color: black;
 
   /* min-height: 88vh; */
@@ -236,7 +238,8 @@ main > h1 {
   font-size: 42px;
 }
 main > h2 {
-  font-size: 38px;
+  padding: 10px 0px;
+  font-size: 30px;
   text-align: left;
   width: 90%;
   margin: auto;
@@ -274,13 +277,38 @@ footer a {
   color: white;
   line-height: 50%;
 }
-.form-container{
+.sideBar {
+  top: calc(60px + 5%);
+  position: absolute;
+  left: 2.5%;
+  font-size: 22px;
+  width: 20%;
+}
+.sideBar h3 {
+  padding: 5px;
+  text-align: center;
+}
+.sideBar ul {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: row;
+}
+.sideBar li {
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 5px;
+  width: 100%;
+}
+.article {
+  width: 50%;
+}
+.form-container {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 100px;
   justify-content: center;
 }
-.form-container > form{
+.form-container > form {
   display: grid;
   grid-auto-flow: row;
   justify-content: center;
@@ -289,11 +317,12 @@ footer a {
   height: 300px;
   transition: all 0.25s ease-in-out;
 }
-.form-container > form:hover, .form-container > form:focus-within{
-  box-shadow: 0 4px 4px 0 rgba(60,64,67,0.2), 0 8px 12px 6px rgba(60,64,67,0.1);
-  
+.form-container > form:hover,
+.form-container > form:focus-within {
+  box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.2),
+    0 8px 12px 6px rgba(60, 64, 67, 0.1);
 }
-.login > h2{
+.login > h2 {
   padding: 15px;
 }
 .login > p {
@@ -331,12 +360,12 @@ footer a {
   width: 90%;
   float: left;
 }
-.search-container{
+.search-container {
   position: relative;
   margin: 20px auto;
-  max-width:900px
+  max-width: 900px;
 }
-.search-container > button{
+.search-container > button {
   /* position: relative;
   left: -80px; */
   float: left;
@@ -346,7 +375,7 @@ footer a {
   border: 1px solid gray;
   border-left: none;
   color: white;
-  
+
   background-color: #4169e1;
   font-size: 36px;
   height: 100%;
@@ -355,14 +384,14 @@ footer a {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.search-container .fa{
+.search-container .fa {
   transition: all 0.2s ease-in-out;
 }
-.search-container > button:hover{
+.search-container > button:hover {
   background-color: white;
   color: #4169e1;
 }
-.search-container > button:hover .fa{
+.search-container > button:hover .fa {
   transform: rotateY(180deg);
 }
 .search-container::after {
@@ -380,7 +409,7 @@ footer a {
 .articles > a {
   color: black;
 }
-.article {
+.articleLink {
   width: 350px;
   height: auto;
   background-color: #8b9bac;
@@ -389,19 +418,19 @@ footer a {
   display: inline-block;
   border-radius: 5px;
 }
-.article:hover{
+.articleLink:hover {
   transform: translateY(-2px);
 }
-.article > h2 {
+.articleLink > h2 {
   padding: 5px 0px 0px 0px;
   font-size: 26px;
 }
-.article .container {
+.articleLink .container {
   background-color: inherit;
   display: flex;
   display: -webkit-flex;
 }
-.article .container .rightBox {
+.articleLink .container .rightBox {
   width: 50%;
   text-align: left;
   font-size: 18px;
@@ -410,22 +439,19 @@ footer a {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.article > .container > .leftBox {
+.articleLink > .container > .leftBox {
   text-align: left;
   width: 50%;
   padding: 10px;
 }
-.article > .container > .leftBox > img {
+.articleLink > .container > .leftBox > img {
   width: 100%;
 }
 /* RESPONSIVITY */
 @media only screen and (max-width: 1024px) {
-  nav {
-    height: 10vw;
-    font-size: 3vw;
-  }
   nav > .mobile-button {
     display: block;
+    font-size: 40px;
   }
   nav > .menu {
     display: inline-block;
@@ -433,17 +459,19 @@ footer a {
     list-style: none;
     color: #4169e1;
     background-color: rgb(0, 0, 0, 0.9);
-    margin-top: 10vw;
+    margin-top: 60px;
     width: 100%;
   }
   nav > .menu a {
-    font-size: 5vw;
+    font-size: 42px;
     text-decoration: none;
     color: white;
     width: 70%;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    background-color: inherit;
+    line-height: 60px;
   }
   nav > .menu a:hover {
     background-color: inherit;
@@ -452,58 +480,45 @@ footer a {
     margin-left: 0;
   }
   nav > .menu > li {
-    padding: 3vw;
+    padding: 20px;
   }
   nav > .menu {
     display: none;
-  }
-  nav > .menu a {
-    padding: 0 2vw;
-    line-height: 10vw;
-    text-align: center;
-    background-color: inherit;
   }
   nav > .mobile {
     display: block;
     z-index: 1000;
   }
   nav > .logo {
-    width: 10vw;
-    margin-right: 70vw;
+    margin-right: 70%;
   }
   main > * {
     margin-left: auto;
     margin-right: auto;
   }
-  main > h1 {
-    font-size: 7vw;
-  }
-  main > h2 {
-    font-size: 4vw;
-  }
-  .article {
-    width: 80vw;
+  .articleLink {
+    width: 80%;
     height: auto;
-    margin: 1vw;
+    margin: 10px;
   }
-  .article > h2 {
-    padding: 1vw;
-    font-size: 6vw;
+  .articleLink > h2 {
+    padding: 10px;
+    font-size: 42px;
   }
-  .article > .container {
+  .articleLink > .container {
     display: flex;
     display: -webkit-flex;
   }
-  .article > .container > .rightBox {
+  .articleLink > .container > .rightBox {
     width: 50%;
     text-align: left;
-    font-size: 4vw;
-    padding-left: 0.5vw;
+    font-size: 30px;
+    padding-left: 5px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
-  .article > .container > .leftBox {
+  .articleLink > .container > .leftBox {
     text-align: left;
     width: 50%;
   }
@@ -513,7 +528,6 @@ footer a {
   }
   .point img {
     width: 300px;
-    /* margin: 40px; */
   }
   .point .container-right {
     margin: 30px 0px 30px 0px;
@@ -544,41 +558,26 @@ footer a {
     font-size: 20px;
     text-align: center;
   }
-
-  .main > h2 {
-    font-size: 10vw;
-  }
-  .main > h3 {
-    margin-top: 15vw;
-    font-size: 6vw;
-  }
   .subjects {
     width: 90%;
   }
   .scroll-down-btn {
-    margin: 0vw auto;
+    margin: 0 auto;
   }
-  .subject-button {
+  /* .subject-button {
     font-size: 6vw;
     margin: 1.5vw;
     padding: 4.5vw;
     width: 40vw;
     height: 15vw;
     line-height: 6vw;
-  }
-  .form-container{
+  } */
+  .form-container {
     display: grid;
     grid-auto-flow: row;
     grid-row-gap: 50px;
   }
-  .main-bullet-points > li {
-    text-align: center;
-    list-style-type: none;
-    margin: 2vw auto;
-    font-size: 5vw;
-    width: 90%;
-  }
-  .search-container{
+  .search-container {
     width: 90%;
   }
   .search-container > .support-searchBox {
@@ -586,21 +585,8 @@ footer a {
     height: 60px;
     font-size: 28px;
   }
-  .search-container > button{
+  .search-container > button {
     font-size: 28px;
     width: 15%;
-  }
-  footer {
-    font-size: 3vw;
-    height: 9vw;
-    line-height: 9vw;
-  }
-  footer > p {
-    padding-left: 3vw;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .main-bullet-points {
-    text-align: center;
   }
 }
