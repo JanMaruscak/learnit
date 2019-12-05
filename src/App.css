@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-display: swap;
   font-family: "Roboto", sans-serif;
+}
+@font-face{
+  font-display: swap;
 }
 html {
   scroll-behavior: smooth;
@@ -53,7 +55,7 @@ nav > .menu > li:first-of-type {
   margin-left: 75px;
 }
 nav > .logo {
-  width: 60px;
+  width: 160px;
 }
 
 .main {
