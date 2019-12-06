@@ -1,27 +1,11 @@
 import React from "react";
-import Default from "../Default"
+import Default from "../Default";
 
-// var page;
-// export default function SubjectPage({match}) {
-//   function TryGetPage() {
-//     if(true){
-//       page = require('./SubjectPages/Fyzika').default
-//       return page;
-//     }
-//   }
-//   const ComponentToRender = page;
-//   TryGetPage()
-//   return <ComponentToRender/>
-// }
-
-// if(ComponentToRender == null){
-//   ComponentToRender == <main><h1>Error</h1></main>;
-// }
-const tryRequire = (path) => {
+const tryRequire = path => {
   try {
-   return require(`${path}`);
+    return require(`${path}`);
   } catch (err) {
-   return null;
+    return null;
   }
 };
 
@@ -32,21 +16,12 @@ class SubjectPage extends React.Component {
       subject: props.match.params.subjectName
     };
   }
- 
+
   render() {
-    // var Variable = require(`./SubjectPages/${this.state.subject}`)
-    // .default;
-    // if(Variable == null)
-    //   Variable = <main></main>
-    // var file = `./SubjectsPage/${this.state.subject}`;
-    // if (file.exists()) {
-    //   return null;
-    // }
-    
-    const Page = tryRequire(`./SubjectPages/${this.state.subject}`) ? tryRequire(`./SubjectPages/${this.state.subject}`).default 
-   : Default;
-    //const Page = require(`./SubjectPages/${this.state.subject}`).default;
-    return (<Page />);
+    const Page = tryRequire(`./SubjectPages/${this.state.subject}`)
+      ? tryRequire(`./SubjectPages/${this.state.subject}`).default
+      : Default;
+    return <Page />;
   }
 }
 

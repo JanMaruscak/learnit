@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function ArticleLink(props) {
-  const link = `/subjects/${props.subject}/${props.url}`
+  const link = `/subjects/${props.subject}/${props.url}`;
   return (
     <article className="articleLink" style={{ position: "relative" }}>
       <h2>{props.name}</h2>
@@ -15,7 +15,9 @@ export default function ArticleLink(props) {
           <p>{props.text}</p>
         </div>
       </div>
-      <Link to={link}><span style={spanLinkStyle}></span></Link>
+      <Link to={link}>
+        <span style={spanLinkStyle}></span>
+      </Link>
     </article>
   );
 }
@@ -27,4 +29,4 @@ const spanLinkStyle = {
   top: "0",
   left: "0",
   zIndex: "1"
-}
+};

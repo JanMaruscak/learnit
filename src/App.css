@@ -4,14 +4,11 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-@font-face{
-  font-display: swap;
-}
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   color: black;
   height: 100%;
   width: 100%;
@@ -56,38 +53,27 @@ nav > .menu > li:first-of-type {
 }
 nav > .logo {
   width: 160px;
+  display: block;
 }
 
 .main {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("images/main-photo.jpg");
-  background-size: cover; /* <------ */
+  background-size: cover;
   background-repeat: no-repeat;
 
-  align-content: center;
-  align-items: center;
-
   color: #90ee90;
-  text-shadow: 3px 5px 2px #474747; /*text-shadow: 0 2px 4px rgba(41,48,59,.55);*/
+  text-shadow: 3px 5px 2px #474747;
   text-align: center;
   min-height: calc(100vh - 60px);
-  /*text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);*/
 }
 
 .main > h2 {
   padding-top: 30vh;
-  text-align: center;
   font-size: 88px;
   letter-spacing: 1px;
 }
-.main > h3 {
-  margin-top: 140px;
-  font-size: 70px;
-}
-
 .subjects {
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   display: table;
   text-align: center;
@@ -105,7 +91,6 @@ nav > .logo {
   line-height: 80px;
   border: 0;
   border-radius: 10px;
-  /* line-height: 70px; */
   color: white;
   background-color: #4169e1;
 }
@@ -175,22 +160,15 @@ nav > .logo {
     transform: translateY(0px);
   }
 }
-@keyframes fly-in-left {
-  0% {
-    margin-right: 500px;
-    opacity: 0;
-  }
-  100% {
-    margin-right: 50px;
-    opacity: 1;
-  }
+.notFlown-left{
+  opacity: 0 !important;
+  margin-right: 500px !important;
+}
+.notFlown-right{
+  opacity: 0 !important;
 }
 .points {
   min-height: 100vh;
-}
-.point {
-  margin-left: auto;
-  margin-right: auto;
 }
 .point > .container {
   display: flex;
@@ -200,18 +178,18 @@ nav > .logo {
 }
 .point img {
   width: 325px;
-  /* margin: 40px; */
 }
 .point .container-right {
+  transition: all 1s;
   margin: 50px;
   width: 30%;
   text-align: left;
 }
 .point .container-left {
+  transition: all 1s;
   margin: 50px;
   width: 30%;
   text-align: right;
-  /* animation: fly-in-left 1s; */
 }
 .point h2 {
   font-size: 28px;
@@ -229,8 +207,6 @@ main {
   width: 100%;
   min-height: calc(100vh - 60px - 50px); /* - navHeight, -footerHeight */
   color: black;
-
-  /* min-height: 88vh; */
 }
 main > h1 {
   padding-top: 12px;
@@ -258,16 +234,12 @@ footer {
   background-color: #4169e1;
   color: white;
   height: 50px;
-  left: 0;
-  right: 0;
   line-height: 50px;
 }
 footer > p {
   margin-left: 20px;
 }
-
 footer .fab {
-  /* width: 40px; */
   padding-left: 20px;
   align-self: center;
 }
@@ -276,18 +248,18 @@ footer a {
   color: white;
   line-height: 50%;
 }
-.sideBar{
+.sideBar {
   top: calc(60px + 5%);
   position: absolute;
   left: 2.5%;
   font-size: 22px;
   width: 15%;
 }
-.sideBar h3{
+.sideBar h3 {
   padding: 5px;
   text-align: center;
 }
-.sideBar ul{
+.sideBar ul {
   list-style: none;
   display: grid;
   grid-auto-flow: row;
@@ -298,23 +270,23 @@ footer a {
   margin-top: 5px;
   width: 100%;
 }
-.sideBar a{
+.sideBar a {
   display: block;
   width: 50%;
   height: 100%;
   margin: auto;
 }
-.article{
+.article {
   width: 55%;
   background-color: white;
 }
-.form-container{
+.form-container {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 100px;
   justify-content: center;
 }
-.form-container > form{
+.form-container > form {
   display: grid;
   grid-auto-flow: row;
   justify-content: center;
@@ -324,11 +296,12 @@ footer a {
   transition: all 0.25s ease-in-out;
   background-color: white;
 }
-.form-container > form:hover, .form-container > form:focus-within{
-  box-shadow: 0 4px 4px 0 rgba(60,64,67,0.2), 0 8px 12px 6px rgba(60,64,67,0.1);
-  
+.form-container > form:hover,
+.form-container > form:focus-within {
+  box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.2),
+    0 8px 12px 6px rgba(60, 64, 67, 0.1);
 }
-.login > h2{
+.login > h2 {
   padding: 15px;
 }
 .login > p {
@@ -368,14 +341,12 @@ footer a {
   width: 90%;
   float: left;
 }
-.search-container{
+.search-container {
   position: relative;
   margin: 20px auto;
-  max-width:900px
+  max-width: 900px;
 }
-.search-container > button{
-  /* position: relative;
-  left: -80px; */
+.search-container > button {
   float: left;
   width: 10%;
   position: absolute;
@@ -383,23 +354,21 @@ footer a {
   border: 1px solid gray;
   border-left: none;
   color: white;
-  
   background-color: #4169e1;
   font-size: 36px;
   height: 100%;
-  top: 0;
   right: 0;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.search-container .fa{
+.search-container .fa {
   transition: all 0.2s ease-in-out;
 }
-.search-container > button:hover{
+.search-container > button:hover {
   background-color: white;
   color: #4169e1;
 }
-.search-container > button:hover .fa{
+.search-container > button:hover .fa {
   transform: rotateY(180deg);
 }
 .search-container::after {
@@ -412,7 +381,6 @@ footer a {
   margin-right: auto;
   text-align: center;
   width: 90%;
-  /* justify-content: space-around; */
 }
 .articles > a {
   color: black;
@@ -426,7 +394,7 @@ footer a {
   display: inline-block;
   border-radius: 5px;
 }
-.articleLink:hover{
+.articleLink:hover {
   transform: translateY(-2px);
 }
 .articleLink > h2 {
@@ -518,17 +486,16 @@ footer a {
   main > h2 {
     font-size: 4vw;
   }
-  .sideBar{
+  .sideBar {
     top: calc(10vw + 5%);
     position: absolute;
     left: 2.5%;
     font-size: 22px;
     width: 20%;
   }
-  .article{
+  .article {
     width: 60%;
     margin-left: 25%;
-
   }
   .articleLink {
     width: 80vw;
@@ -615,19 +582,12 @@ footer a {
     height: 15vw;
     line-height: 6vw;
   }
-  .form-container{
+  .form-container {
     display: grid;
     grid-auto-flow: row;
     grid-row-gap: 50px;
   }
-  .main-bullet-points > li {
-    text-align: center;
-    list-style-type: none;
-    margin: 2vw auto;
-    font-size: 5vw;
-    width: 90%;
-  }
-  .search-container{
+  .search-container {
     width: 90%;
   }
   .search-container > .support-searchBox {
@@ -635,7 +595,7 @@ footer a {
     height: 60px;
     font-size: 28px;
   }
-  .search-container > button{
+  .search-container > button {
     font-size: 28px;
     width: 15%;
   }
@@ -646,10 +606,5 @@ footer a {
   }
   footer > p {
     padding-left: 3vw;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .main-bullet-points {
-    text-align: center;
   }
 }

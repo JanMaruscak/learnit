@@ -3,6 +3,24 @@ import ArticleLink from "../ArticleLink";
 import WindowsSVG from "../../images/windows.svg";
 import SearchingSVG from "../../images/searching.svg";
 
+function isHidden(el) {
+  var style = window.getComputedStyle(el);
+  return style.opacity === "0";
+}
+function CheckForPoints(className) {
+  var els = document.getElementsByClassName(className);
+  Array.prototype.forEach.call(els, function(el) {
+    if (isHidden(el)) {
+      el.classList.remove(className);
+    }
+  });
+}
+
+window.onscroll = () => {
+  CheckForPoints("notFlown-left");
+  CheckForPoints("notFlown-right");
+};
+
 function Main() {
   return (
     <main>
@@ -15,10 +33,10 @@ function Main() {
       <div className="points" id="points">
         <div className="point">
           <div className="container">
-            <div className="container-left">
+            <div className="container-left notFlown-left">
               <img src={WindowsSVG} alt="windows illustration" />
             </div>
-            <div className="container-right">
+            <div className="container-right notFlown-right">
               <h2>Konec hledání</h2>
               <p>
                 Taky nás nebaví ztrácet čas hledáním informací. Lorem ipsum
@@ -33,7 +51,7 @@ function Main() {
 
         <div className="point">
           <div className="container change">
-            <div className="container-left">
+            <div className="container-left notFlown-left">
               <h2>Spolehlivé zdroje</h2>
               <p>
                 Vybíráme ty nejlepší zdroje informací. Lorem ipsum, dolor sit
@@ -43,7 +61,7 @@ function Main() {
                 distinctio.
               </p>
             </div>
-            <div className="container-right">
+            <div className="container-right notFlown-right">
               <img src={SearchingSVG} alt="searching illustration" />
             </div>
           </div>
@@ -51,10 +69,10 @@ function Main() {
 
         <div className="point">
           <div className="container">
-            <div className="container-left">
+            <div className="container-left notFlown-left">
               <img src={WindowsSVG} alt="windows" />
             </div>
-            <div className="container-right">
+            <div className="container-right notFlown-right">
               <h2>Lorem ipsum</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. At

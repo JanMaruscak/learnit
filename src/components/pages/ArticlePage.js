@@ -13,21 +13,10 @@ class ArticlePage extends React.Component {
     this.state = {
       article: props.match.params.articleName
     };
-  }
- 
+  } 
   render() {
-    // var Variable = require(`./SubjectPages/${this.state.subject}`)
-    // .default;
-    // if(Variable == null)
-    //   Variable = <main></main>
-    // var file = `./SubjectsPage/${this.state.subject}`;
-    // if (file.exists()) {
-    //   return null;
-    // }
- 
     const Page = tryRequire(`./ArticlePages/${this.state.article}`) ? tryRequire(`./ArticlePages/${this.state.article}`).default 
    : Default;
-    //const Page = require(`./SubjectPages/${this.state.subject}`).default;
     return (<Page />);
   }
 }
