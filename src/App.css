@@ -27,6 +27,7 @@ nav {
   justify-content: center;
   display: flex;
   display: -webkit-flex;
+  align-items: center;
 }
 nav > .mobile-button {
   display: none;
@@ -234,17 +235,15 @@ footer {
   background-color: #4169e1;
   color: white;
   height: 50px;
-  line-height: 50px;
+  align-items: center;
 }
 footer > p {
   margin-left: 20px;
 }
 footer .fab {
   padding-left: 20px;
-  align-self: center;
 }
 footer a {
-  align-self: center;
   color: white;
   line-height: 50%;
 }
@@ -428,6 +427,7 @@ footer a {
   nav {
     height: 10vw;
     font-size: 3vw;
+    align-items: stretch;
   }
   nav > .mobile-button {
     display: block;
@@ -473,8 +473,15 @@ footer a {
     z-index: 1000;
   }
   nav > .logo {
-    width: 10vw;
-    margin-right: 70vw;
+    width: 20vw;
+    margin-right: 55vw;
+  }
+  nav > .logo > a{
+    line-height:10vw;
+    text-align: center;
+  }
+  nav img{
+    vertical-align: middle;
   }
   main > * {
     margin-left: auto;
