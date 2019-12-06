@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactComponent as Search } from "../../icons/search.svg";
 
 function Support() {
   return (
@@ -10,7 +11,9 @@ function Support() {
           placeholder="Popište svůj problém..."
           className="support-searchBox"
         />
-        <button type="submit"><span class="fa fa-search"></span></button>
+        <button type="submit">
+          <Search />
+        </button>
       </div>
     </main>
   );

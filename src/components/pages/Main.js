@@ -2,6 +2,7 @@ import React from "react";
 import ArticleLink from "../ArticleLink";
 import WindowsSVG from "../../images/windows.svg";
 import SearchingSVG from "../../images/searching.svg";
+import { ReactComponent as ChevronDown } from "../../icons/chevron-down.svg";
 
 function isHidden(el) {
   var style = window.getComputedStyle(el);
@@ -27,7 +28,7 @@ function Main() {
       <div className="main">
         <h2>Proč Learn It?</h2>
         <a href="#points">
-          <span className="fas fa-angle-down fa-7x scroll-down-btn"></span>
+          <ChevronDown className="scroll-down-btn"/>
         </a>
       </div>
       <div className="points" id="points">

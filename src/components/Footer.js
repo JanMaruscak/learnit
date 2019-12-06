@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-// import Facebook from '../../images/facebook.svg'
-// import Twitter from '../../images/twitter.svg'
-// import Instagram from '../images/instagram.svg'
+import {ReactComponent as Facebook} from '../icons/facebook.svg';
+import {ReactComponent as Twitter} from '../icons/twitter.svg';
+import {ReactComponent as Instagram} from '../icons/instagram.svg';
 
 export class Footer extends Component {
   render() {
@@ -9,13 +9,13 @@ export class Footer extends Component {
       <footer>
         <p>Copyright &copy; 2019 Jan Maruščák.</p>
         <a href="https://www.instagram.com">
-          <span className="fab fa-instagram fa-2x"></span>
+          <Instagram />
         </a>
         <a href="https://www.facebook.com">
-          <span className="fab fa-facebook fa-2x"></span>
+          <Facebook />
         </a>
         <a href="https://www.twitter.com">
-          <span className="fab fa-twitter fa-2x"></span>
+          <Twitter />
         </a>
       </footer>
     );

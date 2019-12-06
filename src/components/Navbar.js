@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../images/logo.svg";
+import { ReactComponent as Hamburger } from "../icons/bars.svg";
 
 function Navbar() {
   const [mobile, setMobile] = useState(false);
@@ -33,11 +34,11 @@ function Navbar() {
           <Link to="/account">Účet</Link>
         </li>
       </ul>
-      <span
+      <Hamburger
         style={{ alignSelf: "center", color: "#90ee90" }}
         className="fas fa-bars fa-2x mobile-button"
         onClick={() => setMobile(!mobile)}
-      ></span>
+      />
     </nav>
   );
 }

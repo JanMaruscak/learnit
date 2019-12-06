@@ -68,7 +68,6 @@ nav > .logo {
   text-align: center;
   min-height: calc(100vh - 60px);
 }
-
 .main > h2 {
   padding-top: 30vh;
   font-size: 88px;
@@ -107,14 +106,11 @@ nav > .logo {
   color: #90ee90;
   display: inline-block;
   cursor: pointer;
-  outline: none;
-  text-decoration: none;
-  padding: 20px;
   margin: 50px auto;
+  width: 100px;
   animation: pulse 2s infinite;
   -webkit-animation: pulse 2s infinite;
 }
-
 @keyframes pulse {
   0% {
     transform: translateY(0px);
@@ -240,12 +236,13 @@ footer {
 footer > p {
   margin-left: 20px;
 }
-footer .fab {
-  padding-left: 20px;
+footer svg {
+  width: 30px;
 }
 footer a {
   color: white;
   line-height: 50%;
+  margin-left: 20px;
 }
 .sideBar {
   top: calc(60px + 5%);
@@ -354,21 +351,21 @@ footer a {
   border-left: none;
   color: white;
   background-color: #4169e1;
-  font-size: 36px;
   height: 100%;
   right: 0;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.search-container .fa {
+.search-container svg {
+  height: 100%;
   transition: all 0.2s ease-in-out;
 }
 .search-container > button:hover {
   background-color: white;
   color: #4169e1;
 }
-.search-container > button:hover .fa {
-  transform: rotateY(180deg);
+.search-container > button:hover svg {
+  transform: rotateY(180deg);  
 }
 .search-container::after {
   content: "";
@@ -430,6 +427,7 @@ footer a {
     align-items: stretch;
   }
   nav > .mobile-button {
+    width: 6vw;
     display: block;
   }
   nav > .menu {
@@ -575,6 +573,9 @@ footer a {
     margin-top: 15vw;
     font-size: 6vw;
   }
+  .main a{
+    display: inline-block;
+  }
   .subjects {
     width: 90%;
   }
@@ -613,5 +614,8 @@ footer a {
   }
   footer > p {
     padding-left: 3vw;
+  }
+  footer svg{
+    width: 6vw;
   }
 }
