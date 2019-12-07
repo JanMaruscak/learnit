@@ -157,11 +157,11 @@ nav > .logo {
     transform: translateY(0px);
   }
 }
-.notFlown-left{
+.notFlown-left {
   opacity: 0 !important;
   margin-right: 500px !important;
 }
-.notFlown-right{
+.notFlown-right {
   opacity: 0 !important;
 }
 .points {
@@ -365,7 +365,7 @@ footer a {
   color: #4169e1;
 }
 .search-container > button:hover svg {
-  transform: rotateY(180deg);  
+  transform: rotateY(180deg);
 }
 .search-container::after {
   content: "";
@@ -474,12 +474,15 @@ footer a {
     width: 20vw;
     margin-right: 55vw;
   }
-  nav > .logo > a{
-    line-height:10vw;
+  nav > .logo > a {
+    line-height: 10vw;
     text-align: center;
   }
-  nav img{
+  nav img {
     vertical-align: middle;
+  }
+  main {
+    min-height: calc(100vh - 10vw - 9vw); /* - navHeight, -footerHeight */
   }
   main > * {
     margin-left: auto;
@@ -492,15 +495,17 @@ footer a {
     font-size: 4vw;
   }
   .sideBar {
-    top: calc(10vw + 5%);
+    display: none;
+    /* top: calc(10vw + 5%);
     position: absolute;
     left: 2.5%;
     font-size: 22px;
-    width: 20%;
+    width: 20%; */
   }
   .article {
-    width: 60%;
-    margin-left: 25%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .articleLink {
     width: 80vw;
@@ -573,7 +578,7 @@ footer a {
     margin-top: 15vw;
     font-size: 6vw;
   }
-  .main a{
+  .main a {
     display: inline-block;
   }
   .subjects {
@@ -615,7 +620,7 @@ footer a {
   footer > p {
     padding-left: 3vw;
   }
-  footer svg{
+  footer svg {
     width: 6vw;
   }
 }

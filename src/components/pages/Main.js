@@ -3,6 +3,7 @@ import ArticleLink from "../ArticleLink";
 import WindowsSVG from "../../images/windows.svg";
 import SearchingSVG from "../../images/searching.svg";
 import { ReactComponent as ChevronDown } from "../../icons/chevron-down.svg";
+import Kitten from '../../images/kitten.jpg';
 
 function isHidden(el) {
   var style = window.getComputedStyle(el);
@@ -89,52 +90,52 @@ function Main() {
       <div className="articles">
         <ArticleLink
           url="Test"
-          imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+          imgUrl={Kitten}
           imgAlt="kocicka"
           name="Test"
           text="Testovací článek"
           subject="Fyzika"
         />
         <ArticleLink
-          imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+          imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
         />
         <ArticleLink
-          imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+          imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
         />
         <ArticleLink
-          imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+          imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
         />
         <ArticleLink
-          imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
-          imgAlt="kocicka"
-          name="Kocicka"
-          text="Kocicka je psem a stavbou zustane"
-          subject="Fyzika"
-        />
-        <ArticleLink
-          imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+          imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
           subject="Fyzika"
         />
         <ArticleLink
-          imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+          imgUrl={Kitten}
+          imgAlt="kocicka"
+          name="Kocicka"
+          text="Kocicka je psem a stavbou zustane"
+          subject="Fyzika"
+        />
+        <ArticleLink
+          imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
         />
         <ArticleLink
-          imgUrl="https://blog.inpage.cz/obrazek/3/kitten-jpg/"
+          imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
