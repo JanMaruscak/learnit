@@ -3,7 +3,7 @@ import ArticleLink from "../ArticleLink";
 import WindowsSVG from "../../images/windows.svg";
 import SearchingSVG from "../../images/searching.svg";
 import { ReactComponent as ChevronDown } from "../../icons/chevron-down.svg";
-import Kitten from '../../images/kitten.jpg';
+import Kitten from '../../images/kitten.gif';
 
 function isHidden(el) {
   var style = window.getComputedStyle(el);
