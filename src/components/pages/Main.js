@@ -3,33 +3,16 @@ import ArticleLink from "../ArticleLink";
 import WindowsSVG from "../../images/windows.svg";
 import SearchingSVG from "../../images/searching.svg";
 import { ReactComponent as ChevronDown } from "../../icons/chevron-down.svg";
-import Kitten from '../../images/kitten.gif';
-
-function isHidden(el) {
-  var style = window.getComputedStyle(el);
-  return style.opacity === "0";
-}
-function CheckForPoints(className) {
-  var els = document.getElementsByClassName(className);
-  Array.prototype.forEach.call(els, function(el) {
-    if (isHidden(el)) {
-      el.classList.remove(className);
-    }
-  });
-}
-
-window.onscroll = () => {
-  CheckForPoints("notFlown-left");
-  CheckForPoints("notFlown-right");
-};
+import Kitten from "../../images/kitten.gif";
 
 function Main() {
+  loop();
   return (
     <main>
       <div className="main">
         <h2>Proč Learn It?</h2>
         <a href="#points">
-          <ChevronDown className="scroll-down-btn"/>
+          <ChevronDown className="scroll-down-btn" />
         </a>
       </div>
       <div className="points" id="points">
@@ -142,6 +125,41 @@ function Main() {
         />
       </div>
     </main>
+  );
+}
+
+var scroll =
+  window.requestAnimationFrame ||
+  function(callback) {
+    window.setTimeout(callback, 1000 / 60);
+  };
+var left = document.getElementsByClassName("notFlown-left");
+var right = document.getElementsByClassName("notFlown-right");
+
+function loop() {
+  Array.prototype.forEach.call(left, function(el) {
+    if (isElementInViewport(el)) {
+      el.classList.remove("notFlown-left");
+    }
+  });
+  Array.prototype.forEach.call(right, function(el) {
+    if (isElementInViewport(el)) {
+      el.classList.remove("notFlown-right");
+    }
+  });
+  scroll(loop);
+}
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0 && rect.bottom >= 0) ||
+    (rect.bottom >=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <=
+        (window.innerHeight || document.documentElement.clientHeight)) ||
+    (rect.top >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight))
   );
 }
 

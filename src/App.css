@@ -159,10 +159,11 @@ nav > .logo {
 }
 .notFlown-left {
   opacity: 0 !important;
-  margin-right: 500px !important;
+  margin-right: 250px !important;
 }
 .notFlown-right {
   opacity: 0 !important;
+  margin-left: 250px !important;
 }
 .points {
   min-height: 100vh;
@@ -548,15 +549,17 @@ footer a {
     order: 2;
   }
   .change > .container-left {
-    margin: 30px 0px 30px 0px !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
     order: 2 !important;
   }
   .change > .container-right {
-    margin: 40px 30px 0px 30px !important;
+    margin-top: 40px !important;
+    margin-bottom: 0px !important;
     order: 1 !important;
   }
   .point .container-left {
-    margin: 40px 30px 0px 30px;
+    margin: 40px 0px 0px 0px;
     width: 90%;
     text-align: center;
     order: 1;
