@@ -13,7 +13,7 @@ export default function Matematika() {
                     imgAlt="kocicka"
                     name="Test"
                     text="Testovací článek"
-                    subject="Fyzika"
+                    subject="Matematika"
                 />
             </div>
         </main>

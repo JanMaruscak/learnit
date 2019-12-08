@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,  withRouter } from "react-router-dom";
 import Logo from "../images/logo.svg";
 import { ReactComponent as Hamburger } from "../icons/bars.svg";
 
-function Navbar() {
+function Navbar(props) {
   const [mobile, setMobile] = useState(false);
+  const [query, setQuery] = useState("");
   let showMenu;
 
   if (mobile) {
@@ -12,7 +13,10 @@ function Navbar() {
   } else {
     showMenu = "menu";
   }
-
+  function Redir(e) {
+    props.history.push({ pathname: "articles", search: query });
+    e.preventDefault();
+  }
   return (
     <nav>
       <div className="logo">
@@ -21,6 +25,14 @@ function Navbar() {
         </Link>
       </div>
       <ul className={showMenu} id="nav-menu">
+        <form onSubmit={e => Redir(e)}>
+          <input
+            type="text"
+            placeholder="Vyhledej článek"
+            onChange={e => setQuery(e.target.value)}
+            value={query}
+          />
+        </form>
         <li>
           <Link to="/subjects">Předměty</Link>
         </li>
@@ -43,4 +55,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default withRouter(Navbar);

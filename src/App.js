@@ -12,6 +12,7 @@ import NotFound from "./components/Default";
 import ArticlePage from "./components/pages/ArticlePage";
 import Account from "./components/pages/User";
 import OnRouteChanged from "./components/OnRouteChange";
+import ArticleResult from "./components/pages/ArticleResult";
 
 class App extends React.Component {
   render() {
@@ -31,6 +32,7 @@ class App extends React.Component {
             exact
             component={ArticlePage}
           />
+          <Route path="/articles" exact component={ArticleResult}/>
           <Route path="*" component={NotFound} />
         </Switch>
         <Footer />
