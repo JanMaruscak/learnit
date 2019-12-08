@@ -30,6 +30,7 @@ nav {
   align-items: center;
 }
 nav > .mobile-button {
+  width: 40px;
   display: none;
 }
 
@@ -323,6 +324,7 @@ footer a {
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  letter-spacing: 1.5px;
 }
 .login > .login-button:hover,
 .login > .login-button:focus {
@@ -423,26 +425,18 @@ footer a {
 /* RESPONSIVITY */
 @media only screen and (max-width: 1100px) {
   nav {
-    height: 10vw;
-    font-size: 3vw;
     align-items: stretch;
   }
   nav > .mobile-button {
-    width: 6vw;
     display: block;
   }
   nav > .menu {
-    display: inline-block;
     position: absolute;
-    list-style: none;
-    color: #4169e1;
     background-color: rgb(0, 0, 0, 0.9);
-    margin-top: 10vw;
+    margin-top: 60px;
     width: 100%;
   }
   nav > .menu a {
-    font-size: 5vw;
-    text-decoration: none;
     color: white;
     width: 70%;
     text-align: center;
@@ -456,15 +450,13 @@ footer a {
     margin-left: 0;
   }
   nav > .menu > li {
-    padding: 3vw;
+    padding: 20px;
   }
   nav > .menu {
     display: none;
   }
   nav > .menu a {
-    padding: 0 2vw;
-    line-height: 10vw;
-    text-align: center;
+    line-height: 50px;
     background-color: inherit;
   }
   nav > .mobile {
@@ -472,28 +464,22 @@ footer a {
     z-index: 1000;
   }
   nav > .logo {
-    width: 20vw;
-    margin-right: 55vw;
+    width: 120px;
+    margin-right: 60%;
   }
   nav > .logo > a {
-    line-height: 10vw;
+    line-height: 50px;
     text-align: center;
   }
   nav img {
     vertical-align: middle;
   }
   main {
-    min-height: calc(100vh - 10vw - 9vw); /* - navHeight, -footerHeight */
+    min-height: calc(100vh - 50px - 50px); /* - navHeight, -footerHeight */
   }
   main > * {
     margin-left: auto;
     margin-right: auto;
-  }
-  main > h1 {
-    font-size: 7vw;
-  }
-  main > h2 {
-    font-size: 4vw;
   }
   .sideBar {
     display: none;
@@ -509,32 +495,18 @@ footer a {
     margin-right: auto;
   }
   .articleLink {
-    width: 80vw;
-    height: auto;
-    margin: 1vw;
-  }
-  .articleLink > h2 {
-    padding: 1vw;
-    font-size: 6vw;
-  }
-  .articleLink > .container {
-    display: flex;
-    display: -webkit-flex;
+    width: 200px;
+    height: 150px;
+    margin: 5px;
   }
   .articleLink > .container > .rightBox {
     width: 50%;
     text-align: left;
-    font-size: 4vw;
-    padding-left: 0.5vw;
+    padding-left: 2.5px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
-  .articleLink > .container > .leftBox {
-    text-align: left;
-    width: 50%;
-  }
-
   .point > .container {
     flex-direction: column;
   }
@@ -573,30 +545,15 @@ footer a {
     font-size: 20px;
     text-align: center;
   }
-
   .main > h2 {
-    font-size: 10vw;
-  }
-  .main > h3 {
-    margin-top: 15vw;
-    font-size: 6vw;
+    font-size: 52px;
   }
   .main a {
     display: inline-block;
   }
-  .subjects {
-    width: 90%;
-  }
-  .scroll-down-btn {
-    margin: 0vw auto;
-  }
   .subject-button {
-    font-size: 6vw;
-    margin: 1.5vw;
-    padding: 4.5vw;
-    width: 40vw;
-    height: 15vw;
-    line-height: 6vw;
+    font-size: 32px;
+    width: 220px;
   }
   .form-container {
     display: grid;
@@ -614,16 +571,5 @@ footer a {
   .search-container > button {
     font-size: 28px;
     width: 15%;
-  }
-  footer {
-    font-size: 3vw;
-    height: 9vw;
-    line-height: 9vw;
-  }
-  footer > p {
-    padding-left: 3vw;
-  }
-  footer svg {
-    width: 6vw;
   }
 }
