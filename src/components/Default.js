@@ -1,14 +1,29 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
+import { whileStatement } from "@babel/types";
 
 class Default extends Component {
   render() {
     return (
       <main>
         <h1>Error 404: Not found</h1>
-        <h2 style={{ textAlign: "center" }}>Go back?</h2>
-        <p onClick=""></p>
+        <button
+          onClick={this.props.history.goBack}
+          style={{
+            backgroundColor: "green",
+            color: "white",
+            fontSize: "26px",
+            cursor: "pointer",
+            padding: "10px",
+            width: "200px",
+            border: "none",
+            margin: "10px"
+          }}
+        >
+          Go back?
+        </button>
       </main>
     );
   }
 }
-export default Default;
+export default withRouter(Default);

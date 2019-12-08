@@ -6,6 +6,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   background-color: #f8f8f8;
@@ -20,8 +21,8 @@ a {
 nav {
   top: 0;
   background-color: #4169e1; /*#1E90FF;#20639B;*/
-  font-size: 34px;
-  height: 60px;
+  font-size: 30px;
+  height: 50px;
   letter-spacing: 0.5px;
   width: 100%;
   justify-content: center;
@@ -30,7 +31,7 @@ nav {
   align-items: center;
 }
 nav > .mobile-button {
-  width: 40px;
+  width: 30px;
   display: none;
 }
 
@@ -38,7 +39,7 @@ nav > .menu a {
   color: white;
   background-color: #4169e1; /*#007bff;/*#20639B;*/
   padding: 0 15px;
-  line-height: 60px;
+  line-height: 50px;
   display: block;
 }
 nav > .menu {
@@ -54,7 +55,7 @@ nav > .menu > li:first-of-type {
   margin-left: 75px;
 }
 nav > .logo {
-  width: 160px;
+  width: 125px;
   display: block;
 }
 
@@ -67,7 +68,7 @@ nav > .logo {
   color: #90ee90;
   text-shadow: 3px 5px 2px #474747;
   text-align: center;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 50px);
 }
 .main > h2 {
   padding-top: 30vh;
@@ -160,11 +161,11 @@ nav > .logo {
 }
 .notFlown-left {
   opacity: 0 !important;
-  margin-right: 250px !important;
+  margin-right: 10% !important;
 }
 .notFlown-right {
   opacity: 0 !important;
-  margin-left: 250px !important;
+  margin-left: 10% !important;
 }
 .points {
   min-height: 100vh;
@@ -204,7 +205,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  min-height: calc(100vh - 60px - 50px); /* - navHeight, -footerHeight */
+  min-height: calc(100vh - 50px - 50px); /* - navHeight, -footerHeight */
   color: black;
 }
 main > h1 {
@@ -247,7 +248,7 @@ footer a {
   margin-left: 20px;
 }
 .sideBar {
-  top: calc(60px + 5%);
+  top: calc(50px + 5%);
   position: absolute;
   left: 2.5%;
   font-size: 22px;
@@ -386,54 +387,62 @@ footer a {
 }
 .articleLink {
   width: 350px;
-  height: auto;
+  height: 180px;
   background-color: #8b9bac;
   margin: 10px;
   overflow: hidden;
   display: inline-block;
   border-radius: 5px;
 }
+.articleLink .wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .articleLink:hover {
   transform: translateY(-2px);
 }
-.articleLink > h2 {
-  padding: 5px 0px 0px 0px;
+.articleLink h3 {
+  padding: 5px;
   font-size: 26px;
 }
 .articleLink .container {
   background-color: inherit;
   display: flex;
   display: -webkit-flex;
+  flex-grow: 1;
 }
-.articleLink .container .rightBox {
+.articleLink .rightBox {
   width: 50%;
   text-align: left;
   font-size: 18px;
   padding: 10px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  align-self: center;
 }
-.articleLink > .container > .leftBox {
+.articleLink .leftBox {
   text-align: left;
   width: 50%;
   padding: 10px;
+  align-self: center;
 }
-.articleLink > .container > .leftBox > img {
+.articleLink .leftBox > img {
   width: 100%;
 }
 /* RESPONSIVITY */
 @media only screen and (max-width: 1100px) {
   nav {
+    justify-content: space-between;
     align-items: stretch;
   }
   nav > .mobile-button {
     display: block;
+    margin-right: 25px;
   }
   nav > .menu {
+    display: none;
     position: absolute;
     background-color: rgb(0, 0, 0, 0.9);
-    margin-top: 60px;
+    margin-top: 50px;
     width: 100%;
   }
   nav > .menu a {
@@ -442,6 +451,8 @@ footer a {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    line-height: 50px;
+    background-color: inherit;
   }
   nav > .menu a:hover {
     background-color: inherit;
@@ -452,27 +463,16 @@ footer a {
   nav > .menu > li {
     padding: 20px;
   }
-  nav > .menu {
-    display: none;
-  }
-  nav > .menu a {
-    line-height: 50px;
-    background-color: inherit;
-  }
   nav > .mobile {
     display: block;
     z-index: 1000;
   }
   nav > .logo {
-    width: 120px;
-    margin-right: 60%;
+    margin-left: 25px;
   }
   nav > .logo > a {
     line-height: 50px;
     text-align: center;
-  }
-  nav img {
-    vertical-align: middle;
   }
   main {
     min-height: calc(100vh - 50px - 50px); /* - navHeight, -footerHeight */
@@ -494,25 +494,14 @@ footer a {
     margin-left: auto;
     margin-right: auto;
   }
-  .articleLink {
-    width: 200px;
-    height: 150px;
-    margin: 5px;
-  }
-  .articleLink > .container > .rightBox {
-    width: 50%;
-    text-align: left;
-    padding-left: 2.5px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+  .articles {
+    width: 100%;
   }
   .point > .container {
     flex-direction: column;
   }
   .point img {
     width: 300px;
-    /* margin: 40px; */
   }
   .point .container-right {
     margin: 30px 0px 30px 0px;
@@ -571,5 +560,14 @@ footer a {
   .search-container > button {
     font-size: 28px;
     width: 15%;
+  }
+  footer p {
+    margin-left: 15px;
+  }
+  footer a {
+    margin-left: 15px;
+  }
+  footer a:last-of-type {
+    margin-right: 15px;
   }
 }
