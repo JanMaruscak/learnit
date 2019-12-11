@@ -10,12 +10,6 @@ function Navbar(props) {
   const [mobileOpened, setMobileOpened] = useState(false);
   const [query, setQuery] = useState("");
 
-  // if (mobile || (showMenu !== "menu" && document.getElementById('hamburger') !==null && document.getElementById('hamburger').style.display === "block")) {
-  //   showMenu = "menu open";
-  // } else {
-  //   showMenu = "menu";
-  // }
-
   function Redir(e) {
     setMobileOpened(false);
     props.history.push({ pathname: "articles", search: query });
