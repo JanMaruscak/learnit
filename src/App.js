@@ -32,7 +32,7 @@ class App extends React.Component {
             exact
             component={ArticlePage}
           />
-          <Route path="/articles" exact component={ArticleResult}/>
+          <Route path="/articles" exact component={ArticleResult} />
           <Route path="*" component={NotFound} />
         </Switch>
         <Footer />

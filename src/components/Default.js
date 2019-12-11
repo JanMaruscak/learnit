@@ -19,7 +19,7 @@ class Default extends Component {
             margin: "10px"
           }}
         >
-          Go back?
+          Zpět?
         </button>
       </main>
     );

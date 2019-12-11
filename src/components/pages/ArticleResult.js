@@ -1,10 +1,7 @@
 import React from "react";
 
 function Default() {
-  return (
-    <React.Fragment>
-    </React.Fragment>
-  );
+  return <React.Fragment></React.Fragment>;
 }
 
 function ArticleResult(props) {
@@ -18,7 +15,28 @@ function ArticleResult(props) {
       newArr.push(files[i]);
     }
   }
-  console.log(newArr);
+  if (newArr.length === 0) {
+    return (
+      <main>
+        <h1>Článek nenalezen</h1>
+        <button
+          onClick={props.history.goBack}
+          style={{
+            backgroundColor: "green",
+            color: "white",
+            fontSize: "26px",
+            cursor: "pointer",
+            padding: "10px",
+            width: "200px",
+            border: "none",
+            margin: "10px"
+          }}
+        >
+          Zpět?
+        </button>
+      </main>
+    );
+  }
   return (
     <main>
       <div className="articles">

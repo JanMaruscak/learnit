@@ -6,11 +6,7 @@ function Support() {
     <main>
       <h1>Jak vám můžeme pomoci?</h1>
       <div className="search-container">
-        <input
-          type="text"
-          placeholder="Popište svůj problém..."
-          className="support-searchBox"
-        />
+        <input type="text" placeholder="Popište svůj problém..." />
         <button type="submit">
           <Search />
         </button>
