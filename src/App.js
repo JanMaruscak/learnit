@@ -1,18 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Main from "./components/pages/Main";
-import About from "./components/pages/About";
-import Subjects from "./components/pages/Subjects";
+import Main from "./pages/Main";
+import About from "./pages/About";
+import Subjects from "./pages/Subjects";
 import Footer from "./components/Footer";
-import SubjectPage from "./components/pages/SubjectPage";
-import "./App.css";
-import Support from "./components/pages/Support";
+import SubjectPage from "./pages/SubjectPage";
+import "./styles/App.css";
+import Support from "./pages/Support";
 import NotFound from "./components/Default";
-import ArticlePage from "./components/pages/ArticlePage";
-import Account from "./components/pages/User";
+import ArticlePage from "./pages/ArticlePage";
+import Account from "./pages/User";
 import OnRouteChanged from "./components/OnRouteChange";
-import ArticleResult from "./components/pages/ArticleResult";
+import ArticleResult from "./pages/ArticleResult";
 
 class App extends React.Component {
   render() {

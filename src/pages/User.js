@@ -20,6 +20,9 @@ export default function User() {
           <p>Heslo:</p>
           <input type="password" placeholder="*********" />
           <button type="submit" className="login-button">Registrovat</button>
+          <div id="cover-div">
+            <button>Penis</button>
+          </div>
         </form>
       </div>
     </main>

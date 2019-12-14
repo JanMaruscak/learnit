@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "./ArticleLinks.json";
-import ArticleLink from "../ArticleLink";
+import ArticleLink from "../components/ArticleLink";
 
 function ArticleResult(props) {
   var newArr = [];

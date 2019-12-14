@@ -1,5 +1,5 @@
 import React from 'react'
-import ArticleLink from '../../ArticleLink'
+import ArticleLink from '../../components/ArticleLink'
 
 export default function Matematika() {
     return (

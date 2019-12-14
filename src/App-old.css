@@ -322,6 +322,7 @@ footer a {
   height: 300px;
   transition: all 0.25s ease-in-out;
   background-color: white;
+  position: relative;
 }
 .form-container > form:hover,
 .form-container > form:focus-within {
@@ -361,6 +362,32 @@ footer a {
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0);
   transform: translateX(2px) translateY(2px);
+}
+#cover-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 2s ease-in-out;
+  animation: coverLeft 4s infinite;
+  clip: rect(0,100,100,100);
+}
+@keyframes coverLeft{
+  0%{
+    margin-right: 0;
+  }
+  50%{
+    margin-right: 150px;
+    background-color: blue;
+  }
+  100%{
+    background-color: red;
+  }
 }
 .search-container {
   position: relative;

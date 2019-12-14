@@ -1,5 +1,5 @@
 import React from "react";
-import Default from "../Default";
+import Default from "../components/Default";
 
 const tryRequire = path => {
   try {

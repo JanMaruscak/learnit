@@ -18,7 +18,7 @@ function Navbar(props) {
   return (
     <nav>
       <div className="logo">
-        <Link to="/">
+        <Link to="/" onClick={() => setMobileOpened(false)}>
           <img src={Logo} alt="logo" />
         </Link>
       </div>

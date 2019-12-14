@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Search } from "../../icons/search.svg";
+import { ReactComponent as Search } from "../icons/search.svg";
 
 function Support() {
   return (

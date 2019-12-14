@@ -1,0 +1,148 @@
+@media only screen and (max-width: 1100px) {
+  nav {
+    justify-content: space-between;
+    align-items: stretch;
+    .logo {
+      margin-left: 25px;
+      //   a {
+      //     line-height: 50px;
+      //     text-align: center;
+      //   }
+    }
+    form {
+      margin: 20px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+      color: $mainBlue;
+      input {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
+    .mobile-button {
+      display: block;
+      margin-right: 25px;
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.9);
+      margin-top: $navHeight;
+      width: 100%;
+      li {
+        padding: 20px;
+        &:first-of-type {
+          margin-left: 0;
+        }
+        a {
+          color: white;
+          width: 70%;
+          text-align: center;
+          margin-right: auto;
+          margin-left: auto;
+          line-height: $navHeight;
+          background-color: inherit;
+          &:hover {
+            background-color: inherit;
+          }
+        }
+      }
+    }
+    .open {
+      display: flex;
+      flex-direction: column;
+      z-index: 1000;
+    }
+  }
+  .article {
+    width: 90%;
+  }
+  .articles {
+    width: 100%;
+  }
+  main {
+    * {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .point {
+    .container {
+      flex-direction: column;
+      img {
+        width: 300px;
+      }
+      .container-left {
+        margin: 40px 0px 0px 0px;
+        width: 90%;
+        text-align: center;
+        order: 1;
+      }
+      .container-right {
+        margin: 30px 0px 30px 0px;
+        width: 90%;
+        text-align: center;
+        order: 2;
+      }
+      h2 {
+        font-size: 28px;
+        margin: 0px 0px 20px 0px;
+        text-align: inherit;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+
+    .change {
+      .container-left {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+        order: 2 !important;
+      }
+      .container-right {
+        margin-top: 40px !important;
+        margin-bottom: 0px !important;
+        order: 1 !important;
+      }
+    }
+  }
+  .main {
+    > h2 {
+      font-size: 52px;
+    }
+  }
+  .form-container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 50px;
+  }
+  .search-container {
+    width: 90%;
+    input {
+      width: 85%;
+      height: 60px;
+      font-size: 28px;
+    }
+    button {
+      font-size: 28px;
+      width: 15%;
+    }
+  }
+  footer {
+    p {
+      margin-left: 15px;
+    }
+    a {
+      margin-left: 15px;
+    }
+    a:last-of-type {
+      margin-right: 15px;
+    }
+  }
+}

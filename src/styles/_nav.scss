@@ -1,0 +1,68 @@
+nav {
+  top: 0;
+  background-color: $mainBlue;
+  font-size: 30px;
+  height: $navHeight;
+  letter-spacing: 0.5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .mobile-button {
+    width: 30px;
+    display: none;
+  }
+  .logo {
+    width: 125px;
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    li {
+      &:first-of-type {
+        margin-left: 75px;
+      }
+
+      a {
+        color: white;
+        background-color: $mainBlue;
+        padding: 0 15px;
+        line-height: $navHeight;
+        display: block;
+        &:hover {
+          color: #90ee90;
+          background-color: #2f59d4;
+        }
+      }
+    }
+  }
+  form {
+    height: 35px;
+    align-self: center;
+    margin-left: 20px;
+    input {
+      font-size: 16px;
+      border: 0.5px solid black;
+      padding: 0px 5px;
+    }
+    button {
+      background-color: white;
+      border: 0.5px solid black;
+      border-left: none;
+      padding: 0px 10px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: $mainBlue;
+      }
+      &:hover svg {
+        transform: rotateY(180deg);
+        color: #90ee90;
+      }
+      svg {
+        color: $mainBlue;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

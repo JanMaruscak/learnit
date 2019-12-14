@@ -1,9 +1,9 @@
 import React from "react";
-import ArticleLink from "../ArticleLink";
-import WindowsSVG from "../../images/windows.svg";
-import SearchingSVG from "../../images/searching.svg";
-import { ReactComponent as ChevronDown } from "../../icons/chevron-down.svg";
-import Kitten from "../../images/kitten.gif";
+import ArticleLink from "../components/ArticleLink";
+import WindowsSVG from "../images/windows.svg";
+import SearchingSVG from "../images/searching.svg";
+import { ReactComponent as ChevronDown } from "../icons/chevron-down.svg";
+import Kitten from "../images/kitten.gif";
 
 function Main() {
   loop();
