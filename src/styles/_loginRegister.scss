@@ -13,7 +13,6 @@
     transition: all 0.25s ease-in-out;
     background-color: white;
     position: relative;
-    &:hover,
     &:focus-within {
       box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.2),
         0 8px 12px 6px rgba(60, 64, 67, 0.1);
@@ -60,17 +59,21 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 1s ease-in-out;
-    clip: rect(0, 100, 100, 100);
+    // clip: rect(0, 100, 100, 100);
   }
-  #cover-button{
-      padding: 20px;
-      font-size: 20px;
-      background-color: white;
-      transition: all 1s ease-in-out;
+  #cover-button {
+    padding: 15px;
+    font-size: 24px;
+    background-color: rgba($color: #ffffff, $alpha: 0.25);
+    border: none;
+    z-index: 10;
+    &:hover,
+    :focus {
+      background-color: rgba($color: #ffffff, $alpha: 0.5);
+    }
   }
 }

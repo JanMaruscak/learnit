@@ -1,4 +1,4 @@
-import React, { Suspense, useLayoutEffect,useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 
 var buttonMessage = "Ještě nemáš účet?";
 function useWindowSize() {
@@ -15,60 +15,71 @@ function useWindowSize() {
 }
 export default function User() {
   const [width, height] = useWindowSize();
-  console.log(width)
   const [isFirst, setFirst] = React.useState(false);
   function ClickButton(e) {
     setFirst(!isFirst);
+    e.target.blur();
     e.preventDefault();
   }
+  var coverDiv = document.getElementById("cover-div");
   if (isFirst) {
-    document.getElementById("cover-div").style.left = "-500px";
-    buttonMessage = "Už máš svůj účet?";
-  } else if (document.getElementById("cover-div") !== null) {
-    document.getElementById("cover-div").style.left = "0px";
+    if (width <= 1100) {
+      coverDiv.style.top = "-350px";
+      coverDiv.style.left = "0";
+      buttonMessage = "Už máš svůj účet?";
+    } else {
+      coverDiv.style.left = "-500px";
+      coverDiv.style.top = "0";
+      buttonMessage = "Už máš svůj účet?";
+    }
+  } else if (coverDiv !== null) {
+    coverDiv.style.left = "0px";
+    coverDiv.style.top = "0px";
     buttonMessage = "Ještě nemáš účet?";
   }
   return (
-    <Suspense
-      fallback={
-        <div
-          style={{ width: "100vw", height: "100vh", backgroundColor: "black" }}
-        >
-          Loading...
-        </div>
-      }
-    >
-      <main>
-      <div className="g-signin2" data-onsuccess="onSignIn"></div>
-        <h1>Váš účet</h1>
-        <div className="form-container">
-          <form>
-            <h2>Přihlášení</h2>
-            <p>Email:</p>
-            <input type="email" placeholder="example@gmail.com" />
-            <p>Heslo:</p>
-            <input type="password" placeholder="*********" />
-            <button type="submit" className="login-button">
-              Přihlásit se
+    <main>
+      <h1>Váš účet</h1>
+      <div className="form-container">
+        <form>
+          <h2>Přihlášení</h2>
+          <p>Email:</p>
+          <input type="email" placeholder="example@gmail.com" />
+          <p>Heslo:</p>
+          <input type="password" placeholder="*********" />
+          <button type="submit" className="login-button">
+            Přihlásit se
+          </button>
+        </form>
+        <form>
+          <h2>Registrace</h2>
+          <p>Email:</p>
+          <input type="email" placeholder="example@gmail.com" />
+          <p>Heslo:</p>
+          <input type="password" placeholder="*********" />
+          <button type="submit" className="login-button">
+            Registrovat
+          </button>
+          <div className="area" id="cover-div">
+            <ul className="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+
+            <button id="cover-button" onClick={ClickButton}>
+              {buttonMessage}
             </button>
-          </form>
-          <form>
-            <h2>Registrace</h2>
-            <p>Email:</p>
-            <input type="email" placeholder="example@gmail.com" />
-            <p>Heslo:</p>
-            <input type="password" placeholder="*********" />
-            <button type="submit" className="login-button">
-              Registrovat
-            </button>
-            <div id="cover-div">
-              <button id="cover-button" onClick={ClickButton}>
-                {buttonMessage}
-              </button>
-            </div>
-          </form>
-        </div>
-      </main>
-    </Suspense>
+          </div>
+        </form>
+      </div>
+    </main>
   );
 }
