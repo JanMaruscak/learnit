@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter, NavLink } from "react-router-dom";
 import Logo from "../images/logo.svg";
 import { ReactComponent as Hamburger } from "../icons/bars.svg";
 import { ReactComponent as Search } from "../icons/search.svg";
@@ -18,9 +18,9 @@ function Navbar(props) {
   return (
     <nav>
       <div className="logo">
-        <Link to="/" onClick={() => setMobileOpened(false)}>
+        <NavLink to="/" onClick={() => setMobileOpened(false)}>
           <img src={Logo} alt="logo" />
-        </Link>
+        </NavLink>
       </div>
       <ul className={mobileOpened ? openedStyle : closedStyle} id="nav-menu">
         <form onSubmit={e => Redir(e)} style={{ display: "flex" }}>
@@ -35,24 +35,24 @@ function Navbar(props) {
           </button>
         </form>
         <li>
-          <Link to="/subjects" onClick={() => setMobileOpened(false)}>
+          <NavLink to="/subjects" onClick={() => setMobileOpened(false)}>
             Předměty
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" onClick={() => setMobileOpened(false)}>
+          <NavLink to="/about" onClick={() => setMobileOpened(false)}>
             O nás
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/support" onClick={() => setMobileOpened(false)}>
+          <NavLink to="/support" onClick={() => setMobileOpened(false)}>
             Support
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/account" onClick={() => setMobileOpened(false)}>
+          <NavLink to="/account" onClick={() => setMobileOpened(false)}>
             Účet
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <Hamburger

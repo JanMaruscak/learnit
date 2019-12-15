@@ -30,9 +30,13 @@ nav {
         line-height: $navHeight;
         display: block;
         &:hover {
-          color: #90ee90;
+          color: $mainGreen;
           background-color: #2f59d4;
         }
+      }
+
+      .active {
+        color: $mainGreen;
       }
     }
   }
