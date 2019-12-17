@@ -32,6 +32,7 @@ main {
   margin-right: auto;
   width: 100%;
   min-height: calc(100vh - #{$navHeight} - #{$footerHeight});
+  padding-bottom: 20px;
   color: black;
   > h1 {
     font-size: 42px;
@@ -88,14 +89,15 @@ footer {
     padding-top: 30vh;
     text-align: center;
   }
-}
-.scroll-down-btn {
-  color: #90ee90;
-  display: inline-block;
-  cursor: pointer;
-  margin: 50px auto;
-  width: 100px;
-  animation: pulse 2s infinite;
+
+  .scroll-down-btn {
+    color: #90ee90;
+    display: inline-block;
+    cursor: pointer;
+    margin: 50px auto;
+    width: 100px;
+    animation: pulse 2s infinite;
+  }
 }
 
 .articles {
@@ -110,7 +112,6 @@ footer {
 .articleLink {
   display: inline-block;
   width: 350px;
-  height: 180px;
   background-color: #8b9bac;
   margin: 10px;
   overflow: hidden;
@@ -122,6 +123,16 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
+    .header{
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      h3 {
+        padding: 5px 0px 0px;
+        font-size: 26px;
+      }
+      margin-bottom: 5px;
+    }
     .container {
       background-color: inherit;
       display: flex;
@@ -143,10 +154,6 @@ footer {
         align-self: center;
       }
     }
-  }
-  h3 {
-    padding: 5px;
-    font-size: 26px;
   }
 }
 .search-container {
@@ -194,14 +201,6 @@ footer {
   }
 }
 
-.notFlown-left {
-  opacity: 0 !important;
-  margin-right: 10% !important;
-}
-.notFlown-right {
-  opacity: 0 !important;
-  margin-left: 10% !important;
-}
 .points {
   min-height: 100vh;
 }
@@ -224,12 +223,20 @@ footer {
     }
     h2 {
       font-size: 28px;
-      margin: 0px 20px 20px 20px;
+      margin: 0px 20px 10px;
       text-align: inherit;
     }
     p {
       font-size: 20px;
       text-align: justify;
+    }
+    .notFlown-left {
+      opacity: 0 !important;
+      margin-right: 10% !important;
+    }
+    .notFlown-right {
+      opacity: 0 !important;
+      margin-left: 10% !important;
     }
   }
   img {
@@ -279,17 +286,65 @@ footer {
     display: grid;
     grid-auto-flow: row;
     li {
-      padding: 10px;
-      border: 1px solid black;
+      padding: 5px;
+      // border: 1px solid black;
       margin-top: 5px;
       width: 100%;
+
+      a {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background-color: $mainGreen;
+        color: black;
+        &:hover {
+          transform: translateY(-1px);
+        }
+      }
     }
   }
-  a {
-    display: block;
-    width: 50%;
-    height: 100%;
-    margin: auto;
+}
+.supportLinks{
+  display: grid;
+  grid-auto-flow: row;
+  width: 80%;
+  margin: 40px auto;
+  justify-content: center;
+  .notFlown{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  div:nth-child(odd){
+    transition: all 0.3s ease-in-out;
+  }
+  div:nth-child(even){
+    transition: all 0.5s ease-in-out;
+  }
+}
+.supportLink{
+  display: inline-block;
+  margin: 5px;
+  background-color: lightgray;
+  width: 300px;
+  height: 100px;
+  justify-content: center;
+  // animation: fly-in 1s;
+  h3{
+
+  }
+  p{
+
+  }
+}
+@keyframes fly-in{
+  0%{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100%{
+
   }
 }
 @keyframes pulse {

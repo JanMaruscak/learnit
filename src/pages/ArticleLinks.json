@@ -4,19 +4,23 @@
     "url": "kocicka",
     "text": "kocicka",
     "subject": "Fyzika",
-    "imgAlt": "kocicka"
+    "imgAlt": "kocicka",
+    "date": "9.5.2015"
   },
   {
     "name": "Test2",
     "url": "kocicka",
     "text": "kocicka",
     "subject": "Fyzika",
-    "imgAlt": "kocicka"
+    "imgAlt": "kocicka",
+    "date": "9.5.2015"
   },
   {
-      "name": "penc"
+    "name": "penc",
+    "date": "9.5.2015"
   },
   {
-      "name": "Stieber"
+    "name": "Stieber",
+    "date": "9.5.2015"
   }
 ]

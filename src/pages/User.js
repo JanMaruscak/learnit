@@ -17,8 +17,8 @@ export default function User() {
   const [width, height] = useWindowSize();
   const [isFirst, setFirst] = React.useState(false);
   function ClickButton(e) {
-    setFirst(!isFirst);
     e.target.blur();
+    setFirst(!isFirst);
     e.preventDefault();
   }
   var coverDiv = document.getElementById("cover-div");

@@ -78,24 +78,28 @@ function Main() {
           name="Test"
           text="Testovací článek"
           subject="Fyzika"
+          date="9.5.2015"
         />
         <ArticleLink
           imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
+          date="9.5.2015"
         />
         <ArticleLink
           imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
+          date="9.5.2015"
         />
         <ArticleLink
           imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
+          date="9.5.2015"
         />
         <ArticleLink
           imgUrl={Kitten}
@@ -103,6 +107,7 @@ function Main() {
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
           subject="Fyzika"
+          date="9.5.2015"
         />
         <ArticleLink
           imgUrl={Kitten}
@@ -110,18 +115,21 @@ function Main() {
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
           subject="Fyzika"
+          date="9.5.2015"
         />
         <ArticleLink
           imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
+          date="9.5.2015"
         />
         <ArticleLink
           imgUrl={Kitten}
           imgAlt="kocicka"
           name="Kocicka"
           text="Kocicka je psem a stavbou zustane"
+          date="9.5.2015"
         />
       </div>
     </main>

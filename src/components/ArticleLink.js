@@ -4,10 +4,20 @@ import { Link } from "react-router-dom";
 export default function ArticleLink(props) {
   const link = `/subjects/${props.subject}/${props.url}`;
   return (
-    <article className="articleLink" style={{position: "relative"}}>
+    <article className="articleLink" style={{ position: "relative" }}>
       <div className="wrapper">
-        <h3>{props.name}</h3>
-        <hr style={{ width: "100%", borderColor: "black" }} />
+        <div className="header">
+          <p>{props.date}</p>
+          <h3>{props.name}</h3>
+          <p>{props.subject}</p>
+        </div>
+        <hr
+          style={{
+            width: "100%",
+            border: "2px solid black",
+            borderBottom: "none"
+          }}
+        />
         <div className="container">
           <div className="leftBox">
             <img src={props.imgUrl} alt={props.imgAlt} />

@@ -14,6 +14,9 @@ nav {
   }
   .logo {
     width: 125px;
+    img{
+      vertical-align: middle;
+    }
   }
   .menu {
     list-style: none;
@@ -34,7 +37,6 @@ nav {
           background-color: #2f59d4;
         }
       }
-
       .active {
         color: $mainGreen;
       }

@@ -5,6 +5,7 @@ import ArticleLink from "../components/ArticleLink";
 function ArticleResult(props) {
   var newArr = [];
   var query = props.location.search.substring(1);
+  var showQuery = query;
   query = query.toUpperCase();
   for (var i = 0; i < Data.length; i++) {
     if (Data[i].name.toUpperCase().indexOf(query) > -1) {
@@ -23,9 +24,20 @@ function ArticleResult(props) {
   }
   return (
     <main>
+      <h1>Vaše výsledky pro: {showQuery}</h1>
       <div className="articles">
-        {newArr.map(item => {
-          return <ArticleLink name={item.name} />;
+        {newArr.map((item, i) => {
+          return (
+            <ArticleLink
+              name={item.name}
+              text={item.text}
+              subject={item.subject}
+              imgUrl={item.imgUrl}
+              imgAlt={item.imgAlt}
+              url={item.url}
+              key={i}
+            />
+          );
         })}
       </div>
     </main>
