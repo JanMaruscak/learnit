@@ -75,12 +75,11 @@ footer {
 }
 .main {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../images/main-photo.jpg");
+    url("../images/landing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
-  color: #90ee90;
-  text-shadow: 3px 5px 2px #474747;
+  color: #ffffff;
+  text-shadow: 3px 5px 10px #474747;
   text-align: center;
   min-height: calc(100vh - #{$navHeight});
   h2 {
@@ -91,12 +90,13 @@ footer {
   }
 
   .scroll-down-btn {
-    color: #90ee90;
+    color: #ffffff;
     display: inline-block;
     cursor: pointer;
     margin: 50px auto;
     width: 100px;
     animation: pulse 2s infinite;
+    filter: drop-shadow(3px 5px 10px #474747);
   }
 }
 
@@ -123,13 +123,17 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
-    .header{
+    .header {
       display: flex;
       justify-content: space-around;
       align-items: flex-end;
       h3 {
         padding: 5px 0px 0px;
         font-size: 26px;
+        width: 100%;
+      }
+      p {
+        width: 33%;
       }
       margin-bottom: 5px;
     }
@@ -163,7 +167,7 @@ footer {
   input {
     padding: 6px 10px;
     height: 60px;
-    font-size: 36px;
+    font-size: 32px;
     width: 90%;
     float: left;
     border: 0.5px solid black;
@@ -306,45 +310,63 @@ footer {
     }
   }
 }
-.supportLinks{
+.supportLinks {
   display: grid;
   grid-auto-flow: row;
   width: 80%;
   margin: 40px auto;
   justify-content: center;
-  .notFlown{
+  .notFlown {
     opacity: 0;
     transform: translateY(50px);
   }
-  div:nth-child(odd){
+  > div:nth-child(odd) {
     transition: all 0.3s ease-in-out;
   }
-  div:nth-child(even){
+  > div:nth-child(even) {
     transition: all 0.5s ease-in-out;
   }
 }
-.supportLink{
+.supportLink {
   display: inline-block;
   margin: 5px;
   background-color: lightgray;
-  width: 300px;
+  width: 500px;
   height: 100px;
   justify-content: center;
   // animation: fly-in 1s;
-  h3{
-
-  }
-  p{
-
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    .left {
+      text-align: left;
+      width: 80%;
+      padding: 10px;
+    }
+    .right {
+      width: 20%;
+      text-align: left;
+      padding: 10px;
+      font-size: 16px;
+    }
   }
 }
-@keyframes fly-in{
-  0%{
+.filter {
+  width: 90%;
+  max-width: 900px;
+  height: 50px;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+@keyframes fly-in {
+  0% {
     transform: translateY(50px);
     opacity: 0;
   }
-  100%{
-
+  100% {
   }
 }
 @keyframes pulse {

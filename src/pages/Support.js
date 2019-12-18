@@ -1,44 +1,33 @@
-import React, { useState, useReducer } from "react";
+import React, { useState } from "react";
 import { ReactComponent as Search } from "../icons/search.svg";
 import SupportLink from "../components/SupportLink";
 import Data from "./SupportLinks";
-
-function GetArr(query) {
-  let newArr = [];
-  for (var i = 0; i < Data.length; i++) {
-    if (Data[i].name.toUpperCase().indexOf(query) > -1) {
-      newArr.push(Data[i]);
-    }
-  }
-  return newArr;
-}
+import SearchFilter from '../components/SearchFilter';
 
 function Support(props) {
   const [query, setQuery] = useState("");
-  const [results, dispatch] = useReducer((results, { type, value }) => {
-    switch (type) {
-      case "add":
-        return [...results, value];
-      case "remove":
-        return results.filter((_, index) => index !== value);
-        case "reset":
-          return results = [];
-      default:
-        return results;
-    }
-  }, []);
-  // setResult(props.location.search);
+  const [results, setResults] = useState([]);
 
   function handleSubmit(e) {
-    // console.log(query);
-    dispatch({type:"reset"});
-    for (var i = 0; i < Data.length; i++) {
+    const newArr = [];
+    for (let i = 0; i < Data.length; i++) {
       if (Data[i].name.toUpperCase().indexOf(query.toUpperCase()) > -1) {
-        dispatch({type:"add", value:Data[i]})
+        newArr.push(Data[i]);
       }
     }
-    console.log(results)
-
+    for (let i = 0; i < Data.length; i++) {
+      if (
+        Data[i].text.toUpperCase().indexOf(query.toUpperCase()) > -1 &&
+        !newArr.includes(Data[i])
+      ) {
+        newArr.push(Data[i]);
+      }
+    }
+    setResults(newArr);
+    e.preventDefault();
+  }
+  function handleFilterSubmit(e){
+    console.log(e);
     e.preventDefault();
   }
   loop();
@@ -56,16 +45,23 @@ function Support(props) {
           <Search />
         </button>
       </form>
+      <SearchFilter handleSubmit={handleFilterSubmit} />
       <div className="supportLinks">
-      {results.map((item,i) => {
+        {results.map((item, i) => {
           return (
-            <SupportLink name={item.name} text={item.text} key={i}/>
+            <SupportLink
+              name={item.name}
+              text={item.text}
+              date={item.date}
+              key={i}
+            />
           );
         })}
       </div>
     </main>
   );
 }
+
 var scroll =
   window.requestAnimationFrame ||
   function(callback) {

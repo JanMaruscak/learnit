@@ -7,9 +7,9 @@ export default function ArticleLink(props) {
     <article className="articleLink" style={{ position: "relative" }}>
       <div className="wrapper">
         <div className="header">
-          <p>{props.date}</p>
+          {/* <p>{props.date}</p> */}
           <h3>{props.name}</h3>
-          <p>{props.subject}</p>
+          {/* <p>{props.subject}</p> */}
         </div>
         <hr
           style={{
