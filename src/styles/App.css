@@ -978,6 +978,9 @@ footer svg {
   .article {
     width: 90%;
   }
+  .article iframe {
+    width: 90%;
+  }
   .articles {
     width: 100%;
   }
