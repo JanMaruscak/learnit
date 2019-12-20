@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Sidebar from "../../components/SideBar";
 import GuessingTable from "../../components/GuessingTable";
 
