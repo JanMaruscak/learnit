@@ -8,14 +8,8 @@ const tryRequire = (path) => {
   }
 };
 class ArticlePage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      article: props.match.params.articleName
-    };
-  } 
   render() {
-    const Page = tryRequire(`./ArticlePages/${this.state.article}`) ? tryRequire(`./ArticlePages/${this.state.article}`).default 
+    const Page = tryRequire(`./ArticlePages/${this.props.match.params.articleName}`) ? tryRequire(`./ArticlePages/${this.props.match.params.articleName}`).default 
    : Default;
     return (<Page />);
   }

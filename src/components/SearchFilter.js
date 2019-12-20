@@ -1,10 +1,14 @@
 import React from "react";
 
 function SearchFilter(props) {
+  function submit(e){
+    props.handleSubmit(e);
+    e.preventDefault();
+  }
   return (
-    <form onSubmit={props.onSubmit} className="filter">
+    <form onSubmit={submit} className="filter">
       <p>Seřadit podle:</p>
-      <select>
+      <select name="sortBy" onChange={submit}>
         <option value="name">Název</option>
         <option value="date">Datum</option>
         <option value="review">Hodnocení</option>

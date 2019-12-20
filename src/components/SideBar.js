@@ -7,7 +7,7 @@ function SideBar() {
       <h3>Podobné články</h3>
       <ul>
         <li>
-          <Link to="">Lorem neco</Link>
+          <Link replace to="/subjects/Matematika/Fourierova_Transformace">Fourierova transformace</Link>
         </li>
         <li>
           <Link to="">Lorem neco</Link>

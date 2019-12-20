@@ -27,7 +27,10 @@ function Support(props) {
     e.preventDefault();
   }
   function handleFilterSubmit(e){
-    console.log(e);
+    if(e.target.name === "sortBy"){
+      setResults(() => results.sort((a, b) => (a.name > b.name) ? 1 : -1));
+      // console.log(results);
+    }
     e.preventDefault();
   }
   loop();
@@ -45,7 +48,7 @@ function Support(props) {
           <Search />
         </button>
       </form>
-      <SearchFilter handleSubmit={handleFilterSubmit} />
+      {/* <SearchFilter handleSubmit={handleFilterSubmit} /> */}
       <div className="supportLinks">
         {results.map((item, i) => {
           return (

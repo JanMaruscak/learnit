@@ -24,11 +24,7 @@ function Main() {
             <div className="container-right notFlown-right">
               <h2>Konec hledání</h2>
               <p>
-                Taky nás nebaví ztrácet čas hledáním informací. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Optio et suscipit
-                molestiae sint ad ipsam, nostrum odio eos dignissimos
-                necessitatibus earum accusamus, illum similique omnis quam
-                consequatur sapiente eveniet voluptatem?
+                Taky nás nebaví ztrácet čas hledáním informací. Proto pro vás neustále hledáme nebo tvoříme nové články o jakémkoliv tématu.
               </p>
             </div>
           </div>
@@ -39,11 +35,7 @@ function Main() {
             <div className="container-left notFlown-left">
               <h2>Spolehlivé zdroje</h2>
               <p>
-                Vybíráme ty nejlepší zdroje informací. Lorem ipsum, dolor sit
-                amet consectetur adipisicing elit. Dolor laboriosam quos
-                deserunt, provident id earum aspernatur quidem excepturi odit.
-                Doloremque totam a laudantium nobis quod, id vero at numquam
-                distinctio.
+                Abychom vám zajistili co nejkvalitnější a nejpohodlnější služby, tak veškeré externí informace a články vybíráme jen z těch nejlepších zdrojů. Ty samozřejmě následně ověřujeme.
               </p>
             </div>
             <div className="container-right notFlown-right">
@@ -80,14 +72,14 @@ function Main() {
           subject="Fyzika"
           date="9.5.2015"
         />
-        <ArticleLink
-          imgUrl={Kitten}
-          imgAlt="kocicka"
-          name="Kocicka"
-          text="Kocicka je psem a stavbou zustane"
-          subject="Fyzika"
-          date="9.5.2015"
-        />
+        <ArticleLink name="Fourierova transformace" subject="Matematika"
+        imgUrl="http://lodev.org/cgtutor/images/1ddft.gif"
+        imgAlt="Fourierova Transformace graf"
+        text="Převod signálů
+        z časové reprezentace do frekvenční
+        reprezentace.
+        "
+        url="Fourierova_Transformace"/>
         <ArticleLink
           imgUrl={Kitten}
           imgAlt="kocicka"

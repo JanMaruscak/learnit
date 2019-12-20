@@ -49,12 +49,12 @@ nav .menu li a {
 }
 
 nav .menu li a:hover {
-  color: #90ee90;
+  color: #7bed9f;
   background-color: #2f59d4;
 }
 
 nav .menu li .active {
-  color: #90ee90;
+  color: #7bed9f;
 }
 
 nav form {
@@ -379,6 +379,11 @@ a {
   background-color: white;
 }
 
+.article table, .article th, .article td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
 main {
   text-align: center;
   margin-left: auto;
@@ -482,6 +487,7 @@ footer svg {
 .articleLink {
   display: inline-block;
   width: 350px;
+  height: 180px;
   background-color: #8b9bac;
   margin: 10px;
   overflow: hidden;
@@ -732,13 +738,18 @@ footer svg {
   width: 100%;
   height: 100%;
   margin: auto;
-  background-color: #90ee90;
-  color: black;
+  border: 2px solid #6159e6;
+  color: #6159e6;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .sideBar ul li a:hover {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  color: white;
+  background-color: #6159e6;
+  border-color: black;
 }
 
 .supportLinks {

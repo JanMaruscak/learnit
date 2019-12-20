@@ -22,5 +22,13 @@
   {
     "name": "Stieber",
     "date": "9.5.2015"
+  },
+  {
+  "name":"Fourierova transformace",
+  "subject":"Matematika",
+  "imgUrl":"http://lodev.org/cgtutor/images/1ddft.gif",
+  "imgAlt":"Fourierova Transformace graf",
+  "text":"Převod signálů z časové reprezentace do frekvenční reprezentace.",
+  "url":"Fourierova_Transformace"
   }
 ]
