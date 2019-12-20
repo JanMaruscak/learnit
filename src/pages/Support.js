@@ -2,14 +2,17 @@ import React, { useState } from "react";
 import { ReactComponent as Search } from "../icons/search.svg";
 import SupportLink from "../components/SupportLink";
 import Data from "./SupportLinks";
-import SearchFilter from '../components/SearchFilter';
+import SearchFilter from "../components/SearchFilter";
 
-function Support(props) {
+var shouldSort = false;
+function Support() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
+  const [sortBy, setSortBy] = useState("name");
 
   function handleSubmit(e) {
-    const newArr = [];
+    let newArr = [...results];
+    newArr = [];
     for (let i = 0; i < Data.length; i++) {
       if (Data[i].name.toUpperCase().indexOf(query.toUpperCase()) > -1) {
         newArr.push(Data[i]);
@@ -23,15 +26,28 @@ function Support(props) {
         newArr.push(Data[i]);
       }
     }
+    shouldSort = true;
     setResults(newArr);
     e.preventDefault();
   }
-  function handleFilterSubmit(e){
-    if(e.target.name === "sortBy"){
-      setResults(() => results.sort((a, b) => (a.name > b.name) ? 1 : -1));
-      // console.log(results);
+  function handleFilterSubmit(e) {
+    if (e.target.name === "sortBy") {
+      shouldSort = true;
+      setSortBy(e.target.value);
     }
     e.preventDefault();
+  }
+  if (shouldSort) {
+    let data = [...results];
+    if (sortBy === "name") {
+      data.sort((a, b) => (a.name > b.name ? 1 : -1));
+    } else if (sortBy === "date") {
+      data.sort((a, b) => (a.date < b.date ? 1 : -1));
+    } else if (sortBy === "review") {
+      data.sort((a, b) => (a.review < b.review ? 1 : -1));
+    }
+    setResults(data);
+    shouldSort = false;
   }
   loop();
   return (
@@ -48,7 +64,7 @@ function Support(props) {
           <Search />
         </button>
       </form>
-      {/* <SearchFilter handleSubmit={handleFilterSubmit} /> */}
+      <SearchFilter handleSubmit={handleFilterSubmit} />
       <div className="supportLinks">
         {results.map((item, i) => {
           return (
@@ -56,6 +72,7 @@ function Support(props) {
               name={item.name}
               text={item.text}
               date={item.date}
+              review={item.review}
               key={i}
             />
           );

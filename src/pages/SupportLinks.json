@@ -3,24 +3,28 @@
     "name": "Help",
     "text": "Kdyz chces pomoct",
     "date": "9.5.2015",
+    "review": "1.0",
     "id": "1"
   },
   {
     "name": "Support",
     "text": "Kdyz chces",
-    "date": "9.5.2015",
+    "date": "9.6.2015",
+    "review": "3.1",
     "id": "2"
   },
   {
     "name": "Bubbort",
     "text": "Kdyz chces pomoct",
     "date": "9.5.2015",
+    "review": "3.5",
     "id": "3"
   },
   {
     "name": "Ahoj",
     "text": "Kdyz chces pomoct",
     "date": "9.5.2015",
+    "review": "3.0",
     "id": "4"
   }
 ]

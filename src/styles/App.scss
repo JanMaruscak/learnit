@@ -1,7 +1,8 @@
 @import "./variables";
 @import "./nav";
 @import "./loginRegister";
-@import "./coverDiv";
+@import "./sidebar";
+@import "./article";
 
 * {
   margin: 0;
@@ -25,9 +26,50 @@ a {
 .article {
   width: 55%;
   background-color: white;
-  table, th, td {
-    border: 1px solid black;
-    padding: 5px;
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    justify-content: center;
+    tr {
+      border: 1px solid black;
+    }
+    th {
+      border-right: 1px solid black;
+      padding: 5px;
+    }
+    td {
+      border-right: 1px solid black;
+      padding: 5px;
+    }
+    input[type=text]{
+      background-color: white;
+    }
+    input[type=button]{
+      background-color: $mainBlue;
+      color: white;
+      padding: 5px;
+      border: none;
+      margin: 2px;
+
+    }
+  }
+  .largeButton{
+    border: none;
+    background-color: $mainBlue;
+    padding: 10px;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    &:hover{
+      transform: translateY(-1px);
+    }
+  }
+  h2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  ul {
+    display: inline-block;
   }
 }
 main {
@@ -101,68 +143,6 @@ footer {
     width: 100px;
     animation: pulse 2s infinite;
     filter: drop-shadow(3px 5px 10px #474747);
-  }
-}
-
-.articles {
-  text-align: center;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  a {
-    color: black;
-  }
-}
-.articleLink {
-  display: inline-block;
-  width: 350px;
-  height: 180px;
-  background-color: #8b9bac;
-  margin: 10px;
-  overflow: hidden;
-  border-radius: 5px;
-  &:hover {
-    transform: translateY(-2px);
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    .header {
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-      h3 {
-        padding: 5px 0px 0px;
-        font-size: 26px;
-        width: 100%;
-      }
-      p {
-        width: 33%;
-      }
-      margin-bottom: 5px;
-    }
-    .container {
-      background-color: inherit;
-      display: flex;
-      flex-grow: 1;
-      .leftBox {
-        text-align: left;
-        width: 50%;
-        padding: 10px;
-        align-self: center;
-        img {
-          width: 100%;
-        }
-      }
-      .rightBox {
-        width: 50%;
-        text-align: left;
-        font-size: 18px;
-        padding: 10px;
-        align-self: center;
-      }
-    }
   }
 }
 .search-container {
@@ -271,7 +251,7 @@ footer {
   border: 0;
   border-radius: 10px;
   color: white;
-  background-color:$mainBlue;//#3742fa;
+  background-color: $mainBlue; //#3742fa;
   &:hover,
   :focus {
     transform: translateY(-2px);
@@ -280,52 +260,12 @@ footer {
     box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.75);
   }
 }
-.sideBar {
-  top: calc(50px + 5%);
-  position: absolute;
-  left: 2.5%;
-  font-size: 22px;
-  width: 15%;
-  h3 {
-    padding: 5px;
-    text-align: center;
-  }
-  ul {
-    list-style: none;
-    display: grid;
-    grid-auto-flow: row;
-    li {
-      padding: 5px;
-      // border: 1px solid black;
-      margin-top: 5px;
-      width: 100%;
 
-      a {
-        padding: 10px;
-        display: block;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        border: 2px solid $mainPurple;
-        // background-color: $mainGreen;
-        color: $mainPurple;
-        transition: 0.1s ease-in-out;
-        &:hover {
-          transform: translateY(-2px);
-          color: white;
-          background-color: rgba($color: $mainPurple, $alpha: 1);
-          border-color: black;
-        }
-      }
-    }
-  }
-}
 .supportLinks {
   display: grid;
   grid-auto-flow: row;
   width: 80%;
   margin: 40px auto;
-  justify-content: center;
   .notFlown {
     opacity: 0;
     transform: translateY(50px);
@@ -344,17 +284,19 @@ footer {
   width: 500px;
   height: 100px;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   // animation: fly-in 1s;
   .wrapper {
     display: flex;
     flex-direction: row;
     .left {
       text-align: left;
-      width: 80%;
+      width: 50%;
       padding: 10px;
     }
     .right {
-      width: 20%;
+      width: 50%;
       text-align: left;
       padding: 10px;
       font-size: 16px;

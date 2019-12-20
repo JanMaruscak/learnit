@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Sidebar from "../../components/SideBar";
+import GuessingTable from "../../components/GuessingTable";
 
 function Fourierova_Transformace() {
   return (
@@ -28,29 +30,32 @@ function Fourierova_Transformace() {
         src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e68a6765ec470aa43a06e1b1e5bc6b783a26bfc6"
         alt="vzorec"
       />
-      <h2>Tahák</h2>
-      <table
-        style={{
-          margin: "auto"
-        }}
-      >
-        <thead>
-          <tr>
-            <th>Vlastnost</th>
-            <th>Hodnota</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Lorem</td>
-            <td>Transformaci</td>
-          </tr>
-          <tr>
-            <td>Ipsum</td>
-            <td>Neumim</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2>Test</h2>
+      <GuessingTable
+        values={[
+          {
+            question: "Lorem?",
+            answer: "Ipsum!"
+          },
+          {
+            question: "Lorem2?",
+            answer: "Ipsum2!"
+          }
+        ]}
+      />
+      <h2>Zdroje:</h2>
+      <ul>
+        <li>
+          <a href="https://cs.wikipedia.org/wiki/Fourierova_transformace">
+            https://cs.wikipedia.org/wiki/Fourierova_transformace
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=spUNpyF58BY">
+            https://www.youtube.com/watch?v=spUNpyF58BY
+          </a>
+        </li>
+      </ul>
     </main>
   );
 }

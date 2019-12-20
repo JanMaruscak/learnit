@@ -10,6 +10,7 @@ function SupportLink(props) {
         </div>
         <div className="right">
           <p>Datum aktualizace: {props.date}</p>
+          <p>Hodnocení: {props.review}</p>
         </div>
       </div>
     </div>
