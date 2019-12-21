@@ -5,10 +5,12 @@ import Data from "./SupportLinks";
 import SearchFilter from "../components/SearchFilter";
 
 var shouldSort = false;
+
 function Support() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [sortBy, setSortBy] = useState("name");
+  const [sortOrder, setSortOrder] = useState("ascending");
 
   function handleSubmit(e) {
     let newArr = [...results];
@@ -30,25 +32,43 @@ function Support() {
     setResults(newArr);
     e.preventDefault();
   }
+
   function handleFilterSubmit(e) {
     if (e.target.name === "sortBy") {
       shouldSort = true;
       setSortBy(e.target.value);
+    } else if (e.target.name === "sortOrder") {
+      shouldSort = true;
+      setSortOrder(e.target.value);
     }
     e.preventDefault();
   }
+
   if (shouldSort) {
     let data = [...results];
     if (sortBy === "name") {
-      data.sort((a, b) => (a.name > b.name ? 1 : -1));
+      if (sortOrder === "ascending") {
+        data.sort((a, b) => (a.name > b.name ? 1 : -1));
+      } else {
+        data.sort((a, b) => (a.name < b.name ? 1 : -1));
+      }
     } else if (sortBy === "date") {
-      data.sort((a, b) => (a.date < b.date ? 1 : -1));
+      if (sortOrder === "ascending") {
+        data.sort((a, b) => (a.date > b.date ? 1 : -1));
+      } else {
+        data.sort((a, b) => (a.date < b.date ? 1 : -1));
+      }
     } else if (sortBy === "review") {
-      data.sort((a, b) => (a.review < b.review ? 1 : -1));
+      if (sortOrder === "ascending") {
+        data.sort((a, b) => (a.review > b.review ? 1 : -1));
+      } else {
+        data.sort((a, b) => (a.review < b.review ? 1 : -1));
+      }
     }
     setResults(data);
     shouldSort = false;
   }
+
   loop();
   return (
     <main>

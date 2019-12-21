@@ -2,6 +2,7 @@ import React from "react";
 import ArticleLink from "../components/ArticleLink";
 import WindowsSVG from "../images/windows.svg";
 import SearchingSVG from "../images/searching.svg";
+import GraduationSVG from '../images/graduation.svg';
 import { ReactComponent as ChevronDown } from "../icons/chevron-down.svg";
 import Kitten from "../images/kitten.gif";
 
@@ -47,15 +48,12 @@ function Main() {
         <div className="point">
           <div className="container">
             <div className="container-left notFlown-left">
-              <img src={WindowsSVG} alt="windows" />
+              <img src={GraduationSVG} alt="windows" />
             </div>
             <div className="container-right notFlown-right">
-              <h2>Lorem ipsum</h2>
+              <h2>Efektivita</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                dolore sunt quibusdam nam molestias ut placeat inventore. Soluta
-                accusamus doloribus, suscipit necessitatibus perferendis quis
-                libero voluptatem animi excepturi quibusdam deleniti?
+                Snažíme se vás na každé téma připravit co nejlepším způsobem. To dokazují skvělé akademické výsledky našich uživatelů.
               </p>
             </div>
           </div>

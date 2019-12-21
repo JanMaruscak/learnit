@@ -10,7 +10,7 @@ function SupportLink(props) {
         </div>
         <div className="right">
           <p>Datum aktualizace: {props.date}</p>
-          <p>Hodnocení: {props.review}</p>
+          <p>Hodnocení: {props.review} / 5.0</p>
         </div>
       </div>
     </div>

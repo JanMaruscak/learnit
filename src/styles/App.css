@@ -415,6 +415,8 @@ nav form button svg {
   margin: 10px;
   overflow: hidden;
   border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .articleLink:hover {
@@ -877,6 +879,10 @@ footer svg {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+}
+
+.filter select {
+  margin: 5px;
 }
 
 @-webkit-keyframes fly-in {

@@ -13,6 +13,10 @@ function SearchFilter(props) {
         <option value="date">Datum</option>
         <option value="review">Hodnocení</option>
       </select>
+      <select name="sortOrder" id="" onChange={submit}>
+        <option value="ascending">Vzestupně</option>
+        <option value="descending">Sestupně</option>
+      </select>
     </form>
   );
 }
