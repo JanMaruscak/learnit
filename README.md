@@ -1,4 +1,4 @@
 ## Learn It
 https://learnit.cz
-#Or
+Or
 NPM Start to run on your machine.
