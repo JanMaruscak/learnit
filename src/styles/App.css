@@ -941,9 +941,10 @@ footer svg {
 }
 
 .subjects {
-  width: 100%;
+  width: 90%;
   display: table;
   text-align: center;
+  margin: auto;
 }
 
 .subject-button {
@@ -953,10 +954,8 @@ footer svg {
   text-decoration: none;
   padding: 20px;
   margin: 8px;
-  font-size: 46px;
-  width: 300px;
-  height: 120px;
-  line-height: 80px;
+  width: 350px;
+  height: 200px;
   border: 0;
   border-radius: 10px;
   color: white;
@@ -969,6 +968,14 @@ footer svg {
           transform: translateY(-2px);
   -webkit-box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 39px -14px rgba(0, 0, 0, 0.75);
+}
+
+.subject-button h3 {
+  font-size: 36px;
+}
+
+.subject-button img {
+  height: 70%;
 }
 
 .filter {
