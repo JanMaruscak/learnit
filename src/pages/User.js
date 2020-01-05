@@ -23,7 +23,7 @@ export default function User() {
     setFirst(!isFirst);
     e.preventDefault();
   }
-  var coverDiv = document.getElementById("cover-div");
+  let coverDiv = document.getElementById("cover-div");
   if (isFirst) {
     if (width <= 800) {
       coverDiv.style.top = "-380px";

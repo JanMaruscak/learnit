@@ -1,3 +1,4 @@
+//tablet + phone if not overriden
 @media only screen and (max-width: 1100px) {
   nav {
     justify-content: space-between;
@@ -158,6 +159,7 @@
     display: none;
   }
 }
+//phone only
 @media only screen and (max-width: 800px) {
   .form-container {
     flex-direction: column;
