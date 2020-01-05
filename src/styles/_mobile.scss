@@ -55,12 +55,17 @@
     }
   }
   .article {
-    width: 90%;
+    width: 100%;
     iframe{
       width: 90%;      
     }
-    table{
-      width: 60%;
+    .guessingTable{
+      width: 90%;
+      margin: auto;
+      overflow-x:auto;
+    }
+    ul{
+      width: 80%;
     }
   }
   .articles {

@@ -1,12 +1,13 @@
 import React from "react";
 
+let correctAnswers = 0;
 function GuessingTable(props) {
   const [values, setValues] = React.useState(() => {
     let propsData = props.values;
     propsData.forEach(t => {
       t["revealed"] = false;
       t["userAnswer"] = "";
-      t["result"] = "";
+      t["result"] = false;
     });
     return propsData;
   });
@@ -16,9 +17,9 @@ function GuessingTable(props) {
       if (t === item) {
         t.revealed = true;
         if (t.answer === t.userAnswer) {
-          t.result = "Ano";
+          t.result = true;
         } else {
-          t.result = "Ne";
+          t.result = false;
         }
       }
     });
@@ -31,9 +32,9 @@ function GuessingTable(props) {
     data.forEach(t => {
       t.revealed = true;
       if (t.answer === t.userAnswer) {
-        t.result = "Ano";
+        t.result = true;
       } else {
-        t.result = "Ne";
+        t.result = false;
       }
     });
     setValues(data);
@@ -56,13 +57,31 @@ function GuessingTable(props) {
     data.forEach(t => {
       t.revealed = false;
       t.userAnswer = "";
-      t.result = "";
+      t.result = false;
     });
     setValues(data);
     e.preventDefault();
   }
+  function GetAnswer(item){
+    if(!item.revealed){
+      return "";
+    }
+    if(item.result){
+      return "Správně";
+    }
+    else{
+      return "Špatně";
+    }
+  }
+
+  correctAnswers = 0;
+  for (let i = 0; i < values.length; i++) {
+    if (values[i].result) {
+      correctAnswers++;
+    }
+  }
   return (
-    <>
+    <div className="guessingTable">
       <table>
         <thead>
           <tr>
@@ -93,7 +112,7 @@ function GuessingTable(props) {
                   </form>
                 </td>
                 <td>{item.revealed ? item.answer : null}</td>
-                <td>{item.result}</td>
+                <td>{GetAnswer(item)}</td>
               </tr>
             );
           })}
@@ -113,7 +132,11 @@ function GuessingTable(props) {
         className="largeButton"
         onClick={e => ClearItems(e)}
       />
-    </>
+      <p className="result">
+        {correctAnswers}/{values.length} správně.{" "}
+        {(correctAnswers / values.length) * 100}% úspěšnost
+      </p>
+    </div>
   );
 }
 

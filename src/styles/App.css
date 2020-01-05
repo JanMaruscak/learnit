@@ -444,6 +444,7 @@ nav form button svg {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: 20%;
   margin-bottom: 5px;
 }
 
@@ -453,8 +454,12 @@ nav form button svg {
   width: 100%;
 }
 
-.articleLink .wrapper .header p {
-  width: 33%;
+.articleLink .wrapper hr {
+  width: 100%;
+  border: 2px solid black;
+  border-bottom: none;
+  position: absolute;
+  top: calc(20% + 2%);
 }
 
 .articleLink .wrapper .container {
@@ -462,9 +467,7 @@ nav form button svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  height: 80%;
 }
 
 .articleLink .wrapper .container .leftBox {
@@ -488,6 +491,63 @@ nav form button svg {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.points {
+  min-height: 100vh;
+}
+
+.point .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.point .container .container-left {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin: 50px;
+  width: 30%;
+  text-align: right;
+}
+
+.point .container .container-right {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin: 50px;
+  width: 30%;
+  text-align: left;
+}
+
+.point .container h2 {
+  font-size: 32px;
+  margin: 0px 20px 10px;
+  text-align: inherit;
+}
+
+.point .container p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.point .container .notFlown-left {
+  opacity: 0 !important;
+  margin-right: 10% !important;
+}
+
+.point .container .notFlown-right {
+  opacity: 0 !important;
+  margin-left: 10% !important;
+}
+
+.point img {
+  width: 325px;
 }
 
 * {
@@ -519,50 +579,68 @@ a {
   background-color: white;
 }
 
-.article table {
+.article .guessingTable table {
   margin: auto;
   border-collapse: collapse;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 18px;
 }
 
-.article table tr {
+.article .guessingTable table tr {
   border: 1px solid black;
 }
 
-.article table th {
+.article .guessingTable table th {
   border-right: 1px solid black;
-  padding: 5px;
-}
-
-.article table td {
-  border-right: 1px solid black;
-  padding: 5px;
-}
-
-.article table input[type=text] {
-  background-color: white;
-}
-
-.article table input[type=button] {
-  background-color: #4169e1;
-  color: white;
-  padding: 5px;
-  border: none;
-  margin: 2px;
-}
-
-.article .largeButton {
-  border: none;
-  background-color: #4169e1;
   padding: 10px;
+}
+
+.article .guessingTable table td {
+  border-right: 1px solid black;
+  padding: 10px;
+}
+
+.article .guessingTable table input[type="text"] {
+  background-color: white;
+  font-size: 18px;
+  padding: 2.5px;
+  border-radius: 0px;
+  border: 1px solid black;
+}
+
+.article .guessingTable table input[type="button"] {
+  background-color: #4169e1;
   color: white;
+  padding: 10px;
+  border: none;
   margin: 5px;
   cursor: pointer;
 }
 
-.article .largeButton:hover {
+.article .guessingTable table input[type="button"]:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.article .guessingTable .result {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.article .guessingTable .largeButton {
+  border: none;
+  background-color: #4169e1;
+  padding: 10px;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.article .guessingTable .largeButton:hover {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
 }
@@ -582,7 +660,7 @@ main {
   margin-right: auto;
   width: 100%;
   min-height: calc(100vh - 50px - 50px);
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   color: black;
 }
 
@@ -718,63 +796,6 @@ footer svg {
   display: table;
 }
 
-.points {
-  min-height: 100vh;
-}
-
-.point .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.point .container .container-left {
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  margin: 50px;
-  width: 30%;
-  text-align: right;
-}
-
-.point .container .container-right {
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  margin: 50px;
-  width: 30%;
-  text-align: left;
-}
-
-.point .container h2 {
-  font-size: 28px;
-  margin: 0px 20px 10px;
-  text-align: inherit;
-}
-
-.point .container p {
-  font-size: 20px;
-  text-align: justify;
-}
-
-.point .container .notFlown-left {
-  opacity: 0 !important;
-  margin-right: 10% !important;
-}
-
-.point .container .notFlown-right {
-  opacity: 0 !important;
-  margin-left: 10% !important;
-}
-
-.point img {
-  width: 325px;
-}
-
 .subjects {
   width: 100%;
   display: table;
@@ -883,26 +904,6 @@ footer svg {
 
 .filter select {
   margin: 5px;
-}
-
-@-webkit-keyframes fly-in {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-  }
-}
-
-@keyframes fly-in {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-  }
 }
 
 @-webkit-keyframes pulse {
@@ -1033,13 +1034,18 @@ footer svg {
     z-index: 1000;
   }
   .article {
-    width: 90%;
+    width: 100%;
   }
   .article iframe {
     width: 90%;
   }
-  .article table {
-    width: 60%;
+  .article .guessingTable {
+    width: 90%;
+    margin: auto;
+    overflow-x: auto;
+  }
+  .article ul {
+    width: 80%;
   }
   .articles {
     width: 100%;

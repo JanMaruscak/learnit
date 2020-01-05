@@ -11,13 +11,7 @@ export default function ArticleLink(props) {
           <h3>{props.name}</h3>
           {/* <p>{props.subject}</p> */}
         </div>
-        <hr
-          style={{
-            width: "100%",
-            border: "2px solid black",
-            borderBottom: "none"
-          }}
-        />
+        <hr />
         <div className="container">
           <div className="leftBox">
             <img src={props.imgUrl} alt={props.imgAlt} />

@@ -1,62 +1,67 @@
 .articles {
-    text-align: center;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    a {
-      color: black;
-    }
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  a {
+    color: black;
   }
-  .articleLink {
-    display: inline-block;
-    width: 350px;
-    height: 180px;
-    background-color: #8b9bac;
-    margin: 10px;
-    overflow: hidden;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      transform: translateY(-2px);
-    }
-    .wrapper {
+}
+.articleLink {
+  display: inline-block;
+  width: 350px;
+  height: 180px;
+  background-color: #8b9bac;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: translateY(-2px);
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .header {
       display: flex;
-      flex-direction: column;
-      height: 100%;
-      .header {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-        h3 {
-          padding: 5px 0px 0px;
-          font-size: 26px;
+      justify-content: space-around;
+      align-items: flex-end;
+      height: 20%;
+      h3 {
+        padding: 5px 0px 0px;
+        font-size: 26px;
+        width: 100%;
+      }
+      margin-bottom: 5px;
+    }
+    hr {
+      width: 100%;
+      border: 2px solid black;
+      border-bottom: none;
+      position: absolute;
+      top: calc(20% + 2%);
+    }
+    .container {
+      background-color: inherit;
+      display: flex;
+      height: 80%;
+      .leftBox {
+        text-align: left;
+        width: 50%;
+        padding: 10px;
+        align-self: center;
+        img {
           width: 100%;
         }
-        p {
-          width: 33%;
-        }
-        margin-bottom: 5px;
       }
-      .container {
-        background-color: inherit;
-        display: flex;
-        flex-grow: 1;
-        .leftBox {
-          text-align: left;
-          width: 50%;
-          padding: 10px;
-          align-self: center;
-          img {
-            width: 100%;
-          }
-        }
-        .rightBox {
-          width: 50%;
-          text-align: left;
-          font-size: 18px;
-          padding: 10px;
-          align-self: center;
-        }
+      .rightBox {
+        width: 50%;
+        text-align: left;
+        font-size: 18px;
+        padding: 10px;
+        align-self: center;
       }
     }
   }
+}

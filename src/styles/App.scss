@@ -3,6 +3,7 @@
 @import "./loginRegister";
 @import "./sidebar";
 @import "./article";
+@import "./mainPoints";
 
 * {
   margin: 0;
@@ -26,42 +27,58 @@ a {
 .article {
   width: 55%;
   background-color: white;
-  table {
-    margin: auto;
-    border-collapse: collapse;
-    justify-content: center;
-    tr {
-      border: 1px solid black;
+  .guessingTable {
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      justify-content: center;
+      font-size: 18px;
+      tr {
+        border: 1px solid black;
+      }
+      th {
+        border-right: 1px solid black;
+        padding: 10px;
+      }
+      td {
+        border-right: 1px solid black;
+        padding: 10px;
+      }
+      input[type="text"] {
+        background-color: white;
+        font-size: 18px;
+        padding: 2.5px;
+        border-radius: 0px;
+        border: 1px solid black;
+      }
+      input[type="button"] {
+        background-color: $mainBlue;
+        color: white;
+        padding: 10px;
+        border: none;
+        margin: 5px;
+        cursor: pointer;
+        &:hover {
+          transform: translateY(-1px);
+        }
+      }
     }
-    th {
-      border-right: 1px solid black;
-      padding: 5px;
+    .result {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 20px;
     }
-    td {
-      border-right: 1px solid black;
-      padding: 5px;
-    }
-    input[type=text]{
-      background-color: white;
-    }
-    input[type=button]{
-      background-color: $mainBlue;
-      color: white;
-      padding: 5px;
+    .largeButton {
       border: none;
-      margin: 2px;
-
-    }
-  }
-  .largeButton{
-    border: none;
-    background-color: $mainBlue;
-    padding: 10px;
-    color: white;
-    margin: 5px;
-    cursor: pointer;
-    &:hover{
-      transform: translateY(-1px);
+      background-color: $mainBlue;
+      padding: 10px;
+      color: white;
+      margin: 10px;
+      cursor: pointer;
+      font-size: inherit;
+      &:hover {
+        transform: translateY(-1px);
+      }
     }
   }
   h2 {
@@ -78,7 +95,7 @@ main {
   margin-right: auto;
   width: 100%;
   min-height: calc(100vh - #{$navHeight} - #{$footerHeight});
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   color: black;
   > h1 {
     font-size: 42px;
@@ -190,48 +207,6 @@ footer {
   }
 }
 
-.points {
-  min-height: 100vh;
-}
-.point {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .container-left {
-      transition: all 1s;
-      margin: 50px;
-      width: 30%;
-      text-align: right;
-    }
-    .container-right {
-      transition: all 1s;
-      margin: 50px;
-      width: 30%;
-      text-align: left;
-    }
-    h2 {
-      font-size: 28px;
-      margin: 0px 20px 10px;
-      text-align: inherit;
-    }
-    p {
-      font-size: 20px;
-      text-align: justify;
-    }
-    .notFlown-left {
-      opacity: 0 !important;
-      margin-right: 10% !important;
-    }
-    .notFlown-right {
-      opacity: 0 !important;
-      margin-left: 10% !important;
-    }
-  }
-  img {
-    width: 325px;
-  }
-}
 .subjects {
   width: 100%;
   display: table;
@@ -312,16 +287,8 @@ footer {
   display: flex;
   align-items: center;
   padding: 10px;
-  select{
+  select {
     margin: 5px;
-  }
-}
-@keyframes fly-in {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
   }
 }
 @keyframes pulse {

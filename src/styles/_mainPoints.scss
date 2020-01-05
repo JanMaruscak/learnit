@@ -1,0 +1,42 @@
+.points {
+  min-height: 100vh;
+}
+.point {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container-left {
+      transition: all 1s;
+      margin: 50px;
+      width: 30%;
+      text-align: right;
+    }
+    .container-right {
+      transition: all 1s;
+      margin: 50px;
+      width: 30%;
+      text-align: left;
+    }
+    h2 {
+      font-size: 32px;
+      margin: 0px 20px 10px;
+      text-align: inherit;
+    }
+    p {
+      font-size: 20px;
+      text-align: justify;
+    }
+    .notFlown-left {
+      opacity: 0 !important;
+      margin-right: 10% !important;
+    }
+    .notFlown-right {
+      opacity: 0 !important;
+      margin-left: 10% !important;
+    }
+  }
+  img {
+    width: 325px;
+  }
+}
