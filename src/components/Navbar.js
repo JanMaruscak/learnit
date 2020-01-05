@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { withRouter, NavLink } from "react-router-dom";
 import Logo from "../images/logo.svg";
-import { ReactComponent as Hamburger } from "../icons/bars.svg";
-import { ReactComponent as Search } from "../icons/search.svg";
+import { ReactComponent as Hamburger } from "../images/icons/bars.svg";
+import { ReactComponent as Search } from "../images/icons/search.svg";
 
 var openedStyle = "menu open";
 var closedStyle = "menu";

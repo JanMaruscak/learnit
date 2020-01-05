@@ -63,9 +63,18 @@
       width: 90%;
       margin: auto;
       overflow-x:auto;
+      table{
+        margin: auto;
+        input[type="text"] {
+          width: 100px;
+        }
+      }
     }
     ul{
-      width: 80%;
+      a{
+        overflow: hidden;
+        word-wrap:break-word;
+      }
     }
   }
   .articles {

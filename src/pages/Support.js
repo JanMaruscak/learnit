@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as Search } from "../icons/search.svg";
+import { ReactComponent as Search } from "../images/icons/search.svg";
 import SupportLink from "../components/SupportLink";
 import Data from "./SupportLinks";
 import SearchFilter from "../components/SearchFilter";

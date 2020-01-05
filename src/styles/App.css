@@ -600,6 +600,7 @@ a {
 .article .guessingTable table td {
   border-right: 1px solid black;
   padding: 10px;
+  height: 20px;
 }
 
 .article .guessingTable table input[type="text"] {
@@ -1044,8 +1045,15 @@ footer svg {
     margin: auto;
     overflow-x: auto;
   }
-  .article ul {
-    width: 80%;
+  .article .guessingTable table {
+    margin: auto;
+  }
+  .article .guessingTable table input[type="text"] {
+    width: 100px;
+  }
+  .article ul a {
+    overflow: hidden;
+    word-wrap: break-word;
   }
   .articles {
     width: 100%;

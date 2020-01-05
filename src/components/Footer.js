@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import {ReactComponent as Facebook} from '../icons/facebook.svg';
-import {ReactComponent as Twitter} from '../icons/twitter.svg';
-import {ReactComponent as Instagram} from '../icons/instagram.svg';
+import {ReactComponent as Facebook} from '../images/icons/facebook.svg';
+import {ReactComponent as Twitter} from '../images/icons/twitter.svg';
+import {ReactComponent as Instagram} from '../images/icons/instagram.svg';
 
 export class Footer extends Component {
   render() {
