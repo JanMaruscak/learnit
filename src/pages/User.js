@@ -1,4 +1,6 @@
 import React, { useLayoutEffect, useState } from "react";
+import FacebookLogo from '../images/icons/facebook-logo.png';
+import GoogleLogo from '../images/icons/google-logo.svg';
 
 var buttonMessage = "Ještě nemáš účet?";
 function useWindowSize() {
@@ -23,12 +25,12 @@ export default function User() {
   }
   var coverDiv = document.getElementById("cover-div");
   if (isFirst) {
-    if (width <= 1100) {
-      coverDiv.style.top = "-350px";
+    if (width <= 800) {
+      coverDiv.style.top = "-380px";
       coverDiv.style.left = "0";
       buttonMessage = "Už máš svůj účet?";
     } else {
-      coverDiv.style.left = "-500px";
+      coverDiv.style.left = -coverDiv.offsetWidth - 2 - 80 + "px"; // -2 because it is 2 pixels less than actual width (idk), and - 80 because (margin: 40) * 2
       coverDiv.style.top = "0";
       buttonMessage = "Už máš svůj účet?";
     }
@@ -79,6 +81,11 @@ export default function User() {
             </button>
           </div>
         </form>
+      </div>
+      <div className="login-services">
+        <h3>Nebo se přihlašte s jednou z těchto služeb</h3>
+        <button className="google" name="google"><img src={GoogleLogo} alt=""/> Přihlásit s Google</button>
+        <button className="facebook" name="facebook"><img src={FacebookLogo} alt=""/>Přihlásit s Facebook</button>
       </div>
     </main>
   );

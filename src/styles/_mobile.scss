@@ -56,6 +56,7 @@
   }
   .article {
     width: 100%;
+    padding: 5%;
     iframe{
       width: 90%;      
     }
@@ -127,14 +128,6 @@
       font-size: 52px;
     }
   }
-  .form-container {
-    display: grid;
-    grid-auto-flow: row;
-    grid-row-gap: 20px;
-    form{
-      margin-bottom: 30px;
-    }
-  }
   .search-container {
     width: 90%;
     input {
@@ -163,5 +156,15 @@
   }
   .sideBar{
     display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .form-container {
+    flex-direction: column;
+    form{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

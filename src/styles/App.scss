@@ -1,8 +1,8 @@
 @import "./variables";
 @import "./nav";
-@import "./loginRegister";
+@import "./user";
 @import "./sidebar";
-@import "./article";
+@import "./articleLink";
 @import "./mainPoints";
 
 * {
@@ -238,8 +238,8 @@ footer {
 }
 
 .supportLinks {
-  display: grid;
-  grid-auto-flow: row;
+  display: flex;
+  flex-direction: row;
   width: 80%;
   margin: 40px auto;
   .notFlown {

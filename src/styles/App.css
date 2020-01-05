@@ -98,19 +98,26 @@ nav form button svg {
 }
 
 .form-container {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .form-container form {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -121,6 +128,7 @@ nav form button svg {
   transition: all 0.25s ease-in-out;
   background-color: white;
   position: relative;
+  margin: 40px;
 }
 
 .form-container form:focus-within {
@@ -139,8 +147,10 @@ nav form button svg {
 }
 
 .form-container form input {
-  width: 250px;
+  width: 75%;
   margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 18px;
   padding: 3px 5px;
 }
@@ -150,13 +160,16 @@ nav form button svg {
   color: white;
   margin: 20px;
   height: 40px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   border: 0;
   font-weight: bold;
   font-size: inherit;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   letter-spacing: 1.5px;
 }
@@ -199,6 +212,72 @@ nav form button svg {
 .form-container #cover-button:hover,
 .form-container #cover-button :focus {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.login-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-services h3 {
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+.login-services button {
+  width: 300px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding: 20px;
+  font-size: 18px;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-services button.facebook {
+  background-color: #4267b2;
+  color: white;
+}
+
+.login-services button.google {
+  background-color: white;
+  color: #000;
+}
+
+.login-services button img {
+  width: 20%;
+}
+
+.login-services button p {
+  width: 80%;
+}
+
+.login-services button:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 
 .sideBar {
@@ -829,9 +908,13 @@ footer svg {
 }
 
 .supportLinks {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 80%;
   margin: 40px auto;
 }
@@ -1036,6 +1119,7 @@ footer svg {
   }
   .article {
     width: 100%;
+    padding: 5%;
   }
   .article iframe {
     width: 90%;
@@ -1109,15 +1193,6 @@ footer svg {
   .main > h2 {
     font-size: 52px;
   }
-  .form-container {
-    display: -ms-grid;
-    display: grid;
-    grid-auto-flow: row;
-    grid-row-gap: 20px;
-  }
-  .form-container form {
-    margin-bottom: 30px;
-  }
   .search-container {
     width: 90%;
   }
@@ -1144,6 +1219,20 @@ footer svg {
   }
   .sideBar {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-container form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=App.css.map */
