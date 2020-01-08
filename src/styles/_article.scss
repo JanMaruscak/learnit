@@ -1,6 +1,10 @@
 .article {
   width: 55%;
   background-color: white;
+  h1,h2{
+    margin-bottom: 10px;
+    padding-top: 15px;
+  }
   .guessingTable {
     table {
       margin: auto;
@@ -59,5 +63,15 @@
   h2 {
     margin-top: 20px;
     text-align: center;
+  }
+  >ul{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    li{
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

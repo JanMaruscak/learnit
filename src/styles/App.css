@@ -280,52 +280,6 @@ nav form button svg {
           transform: translateY(-1px);
 }
 
-.sideBar {
-  top: calc(50px + 5%);
-  position: absolute;
-  left: 2.5%;
-  font-size: 22px;
-  width: 15%;
-}
-
-.sideBar h3 {
-  padding: 5px;
-  text-align: center;
-}
-
-.sideBar ul {
-  list-style: none;
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-}
-
-.sideBar ul li {
-  padding: 5px;
-  margin-top: 5px;
-  width: 100%;
-}
-
-.sideBar ul li a {
-  padding: 10px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  border: 2px solid #6159e6;
-  color: #6159e6;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
-}
-
-.sideBar ul li a:hover {
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
-  color: white;
-  background-color: #6159e6;
-  border-color: black;
-}
-
 .area {
   background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
@@ -473,6 +427,52 @@ nav form button svg {
     opacity: 0;
     border-radius: 50%;
   }
+}
+
+.sideBar {
+  top: calc(50px + 5%);
+  position: absolute;
+  left: 1.25%;
+  font-size: 22px;
+  width: 20%;
+}
+
+.sideBar h3 {
+  padding: 5px;
+  text-align: center;
+}
+
+.sideBar ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.sideBar ul li {
+  padding: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.sideBar ul li a {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid #6159e6;
+  color: #6159e6;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.sideBar ul li a:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  color: white;
+  background-color: #6159e6;
+  border-color: black;
 }
 
 .articles {
@@ -698,6 +698,11 @@ nav form button svg {
   background-color: white;
 }
 
+.article h1, .article h2 {
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
 .article .guessingTable table {
   margin: auto;
   border-collapse: collapse;
@@ -768,6 +773,18 @@ nav form button svg {
 .article h2 {
   margin-top: 20px;
   text-align: center;
+}
+
+.article > ul {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article > ul li {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 * {
