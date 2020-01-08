@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from "react";
-import FacebookLogo from '../images/icons/facebook-logo.png';
-import GoogleLogo from '../images/icons/google-logo.svg';
+import FacebookLogo from "../images/icons/facebook-logo.png";
+import GoogleLogo from "../images/icons/google-logo.svg";
 
 var buttonMessage = "Ještě nemáš účet?";
 function useWindowSize() {
@@ -84,8 +84,13 @@ export default function User() {
       </div>
       <div className="login-services">
         <h3>Nebo se přihlašte s jednou z těchto služeb</h3>
-        <button className="google" name="google"><img src={GoogleLogo} alt=""/> Přihlásit s Google</button>
-        <button className="facebook" name="facebook"><img src={FacebookLogo} alt=""/>Přihlásit s Facebook</button>
+        <button className="google" name="google">
+          <img src={GoogleLogo} alt="" /> Přihlásit s Google
+        </button>
+        <button className="facebook" name="facebook">
+          <img src={FacebookLogo} alt="" />
+          Přihlásit s Facebook
+        </button>
       </div>
     </main>
   );

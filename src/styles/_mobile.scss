@@ -58,24 +58,24 @@
   .article {
     width: 100%;
     padding: 5%;
-    iframe{
-      width: 90%;      
+    iframe {
+      width: 90%;
     }
-    .guessingTable{
+    .guessingTable {
       width: 90%;
       margin: auto;
-      overflow-x:auto;
-      table{
+      overflow-x: auto;
+      table {
         margin: auto;
         input[type="text"] {
           width: 100px;
         }
       }
     }
-    ul{
-      a{
+    ul {
+      a {
         overflow: hidden;
-        word-wrap:break-word;
+        word-wrap: break-word;
       }
     }
   }
@@ -141,7 +141,7 @@
       width: 15%;
     }
   }
-  .supportLink{
+  .supportLink {
     width: 100%;
   }
   footer {
@@ -155,7 +155,7 @@
       margin-right: 15px;
     }
   }
-  .sideBar{
+  .sideBar {
     display: none;
   }
 }
@@ -163,7 +163,7 @@
 @media only screen and (max-width: 800px) {
   .form-container {
     flex-direction: column;
-    form{
+    form {
       width: 90%;
       margin-left: auto;
       margin-right: auto;

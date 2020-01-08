@@ -20,8 +20,8 @@ export default function Subjects() {
           img={Computer}
           imgAlt="výpočetní technika"
         />
-        <Subject name="Zeměpis" img={Geography} imgAlt="zemepis"/>
-        <Subject name="Snippets" img={ComputerWithFile} imgAlt="snippets"/>
+        <Subject name="Zeměpis" img={Geography} imgAlt="zemepis" />
+        <Subject name="Snippets" img={ComputerWithFile} imgAlt="snippets" />
         <Subject name="Fyzika" img={Physics} />
         <Subject name="Fyzika" img={Physics} />
         <Subject name="Fyzika" img={Physics} />

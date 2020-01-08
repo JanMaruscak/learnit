@@ -81,14 +81,14 @@
     }
   }
 }
-.login-services{
+.login-services {
   display: flex;
   flex-direction: column;
-  h3{
+  h3 {
     margin-top: 40px;
     font-size: 22px;
   }
-  button{
+  button {
     width: 300px;
     height: 100px;
     margin-left: auto;
@@ -104,23 +104,22 @@
     cursor: pointer;
     border: 1px solid rgba($color: #000000, $alpha: 0.2);
     transition: all 0.2s ease-in-out;
-    &.facebook{
+    &.facebook {
       background-color: #4267b2;
       color: white;
     }
-    &.google{
+    &.google {
       background-color: white;
       color: #000;
     }
-    img{
+    img {
       width: 20%;
     }
-    p{
+    p {
       width: 80%;
     }
-    &:hover{
+    &:hover {
       transform: translateY(-1px);
     }
   }
-
 }
