@@ -18,6 +18,7 @@ export default function Matematika() {
           url="Fourierova_Transformace"
         />
         <ArticleLink
+          url="Goniometrie"
           imgUrl="https://matematika.cz/content/images/gonio1.png"
           imgAlt="goniometrie"
           name="Goniometrie"
