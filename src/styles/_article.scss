@@ -64,14 +64,22 @@
     margin-top: 20px;
     text-align: center;
   }
+  h3{
+    font-size: 22px;
+    margin: 15px 5px 5px 5px;
+  }
   >ul{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    list-style-type: none;
     li{
       width: 50%;
       margin-left: auto;
       margin-right: auto;
     }
+  }
+  p{
+    padding-bottom: 10px;
   }
 }

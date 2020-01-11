@@ -775,16 +775,26 @@ nav form button svg {
   text-align: center;
 }
 
+.article h3 {
+  font-size: 22px;
+  margin: 15px 5px 5px 5px;
+}
+
 .article > ul {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  list-style-type: none;
 }
 
 .article > ul li {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.article p {
+  padding-bottom: 10px;
 }
 
 * {
